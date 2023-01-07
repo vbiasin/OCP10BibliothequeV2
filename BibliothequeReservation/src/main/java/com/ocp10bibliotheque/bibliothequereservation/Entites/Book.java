@@ -1,4 +1,4 @@
-package com.ocp7bibliotheque.bibliothequebatchmail.Entites;
+package com.ocp10bibliotheque.bibliothequereservation.Entites;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -137,3 +137,4 @@ public class Book implements Serializable {
         this.currentNumberReservation = currentNumberReservation;
     }
 }
+
