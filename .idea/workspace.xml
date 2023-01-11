@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="bibliothequeweb.properties change status db create to update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeSpringCloudConfig/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeSpringCloudConfig/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeAdministration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeAdministration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeBatchMail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeBatchMail.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeReservation.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeReservation.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeBook.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeBook.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +111,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeAdministrationApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeBookApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OCP7BibliothequeWeb" />
       <method v="2">
@@ -302,21 +298,7 @@
       <workItem from="1673081857982" duration="1629000" />
       <workItem from="1673083861583" duration="1161000" />
       <workItem from="1673166637338" duration="610000" />
-      <workItem from="1673457664634" duration="5996000" />
-    </task>
-    <task id="LOCAL-00008" summary="Ajout sécurité + suppression module gateway">
-      <created>1638988512124</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1638988512124</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Ajout sécurité + suppression module gateway">
-      <created>1638990999098</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1638990999100</updated>
+      <workItem from="1673457664634" duration="7564000" />
     </task>
     <task id="LOCAL-00010" summary="Test sécurité">
       <created>1639324161976</created>
@@ -647,15 +629,27 @@
       <option name="project" value="LOCAL" />
       <updated>1673462601222</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="utilisation ipv4 192.168.1.62">
+      <created>1673464026419</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1673464026419</updated>
+    </task>
+    <task id="LOCAL-00058" summary="bibliothequeweb.properties change status db create to update">
+      <created>1673464282476</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1673464282476</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modif lending" />
-    <MESSAGE value="modif employee, userAccount et suppression Member" />
     <MESSAGE value="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact" />
     <MESSAGE value="Test recherche utilisateur + ajout role" />
     <MESSAGE value="Test recherche utilisateur + ajout / suppression role" />
@@ -679,7 +673,9 @@
     <MESSAGE value="implémentation de la fonction permettant de retourner un prêt" />
     <MESSAGE value="ajout module réservation + modification entite Book" />
     <MESSAGE value="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation" />
+    <MESSAGE value="utilisation ipv4 192.168.1.62" />
+    <MESSAGE value="bibliothequeweb.properties change status db create to update" />
+    <option name="LAST_COMMIT_MESSAGE" value="bibliothequeweb.properties change status db create to update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
