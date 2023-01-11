@@ -30,16 +30,16 @@ public class WebBookController {
     }
 
     @PostMapping("/addBook")
-    public String book(String resume, String title, String author, int numberExemplar, int idLibrary) {
-        Book book = new Book(new Date(),resume,title,author,numberExemplar);
+    public String book(String resume, String title, String author, int numberExemplarTotal, int idLibrary) {
+        Book book = new Book(new Date(),resume,title,author,numberExemplarTotal);
         BookDTO bookDTO = new BookDTO(idLibrary, book);
         bookProxy.addBook(bookDTO);
         return  "book";
     }
 
     @PostMapping("/modifyBook")
-    public String book(int idBook, int numberExemplar) {
-        BookDTO bookDTO = new BookDTO(idBook, numberExemplar);
+    public String book(int idBook, int numberExemplarTotal) {
+        BookDTO bookDTO = new BookDTO(idBook, numberExemplarTotal);
         bookProxy.modifyBook(bookDTO);
         return  "book";
     }

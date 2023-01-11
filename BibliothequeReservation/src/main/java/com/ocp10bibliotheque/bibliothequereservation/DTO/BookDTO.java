@@ -1,6 +1,6 @@
-package com.ocp7bibliotheque.bibliothequebook.DTO;
+package com.ocp10bibliotheque.bibliothequereservation.DTO;
 
-import com.ocp7bibliotheque.bibliothequebook.Entites.Book;
+import com.ocp10bibliotheque.bibliothequereservation.Entites.Book;
 
 import java.io.Serializable;
 
@@ -81,5 +81,3 @@ public class BookDTO implements Serializable {
         this.numberExemplar = numberExemplar;
     }
 }
-
-
