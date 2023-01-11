@@ -30,7 +30,7 @@
                         </div>
                         <div>
                             <label>Nombre d'exemplaires:</label>
-                            <input type="number"  step="any" name="numberExemplar" />
+                            <input type="number"  step="any" name="numberExemplarTotal" />
                         </div>
                         <div>
                             <label>ID Bibliothèque:</label>
@@ -80,7 +80,7 @@
                             <td th:text= "${book.title}"></td>
                             <td th:text= "${book.author}"></td>
                             <td th:text= "${book.resume}"></td>
-                            <td th:text= "${book.numberExemplar}"></td>
+                            <td th:text= "${book.numberExemplarActual}"></td>
                             <td th:text= "${book.library.name}"></td>
                             <td th:text= "${book.library.address}"></td>
                             <td  ><form th:if="${book.getAvailable}" th:action="@{/borrow(idBook=${book.id})}" method="post"><button type="submit"  >Emprunter</button></form></td>
@@ -88,7 +88,7 @@
                                 <form th:action="@{/modifyBook(idBook=${book.id})}" method="post">
                                     <div>
                                         <label>Nombre d'exemplaires:</label>
-                                        <input type="number"  step="any" name="numberExemplar" />
+                                        <input type="number"  step="any" name="numberExemplarTotal" />
                                     </div>
                                     <button type="submit"  >Modifier</button>
                                 </form>
