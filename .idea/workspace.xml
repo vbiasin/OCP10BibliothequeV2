@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="bibliothequeweb.properties change status db create to update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeBook.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeBook.properties" afterDir="false" />
-    </list>
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="link db for module book" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -298,14 +295,7 @@
       <workItem from="1673081857982" duration="1629000" />
       <workItem from="1673083861583" duration="1161000" />
       <workItem from="1673166637338" duration="610000" />
-      <workItem from="1673457664634" duration="7564000" />
-    </task>
-    <task id="LOCAL-00010" summary="Test sécurité">
-      <created>1639324161976</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1639324161976</updated>
+      <workItem from="1673457664634" duration="7888000" />
     </task>
     <task id="LOCAL-00011" summary="Test login">
       <created>1642009508525</created>
@@ -643,14 +633,20 @@
       <option name="project" value="LOCAL" />
       <updated>1673464282476</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="link db for module book">
+      <created>1673465826843</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1673465826843</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact" />
     <MESSAGE value="Test recherche utilisateur + ajout role" />
     <MESSAGE value="Test recherche utilisateur + ajout / suppression role" />
     <MESSAGE value="Test recherche utilisateur 260320222" />
@@ -675,7 +671,8 @@
     <MESSAGE value="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation" />
     <MESSAGE value="utilisation ipv4 192.168.1.62" />
     <MESSAGE value="bibliothequeweb.properties change status db create to update" />
-    <option name="LAST_COMMIT_MESSAGE" value="bibliothequeweb.properties change status db create to update" />
+    <MESSAGE value="link db for module book" />
+    <option name="LAST_COMMIT_MESSAGE" value="link db for module book" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
