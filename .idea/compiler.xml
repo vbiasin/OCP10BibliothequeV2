@@ -10,9 +10,8 @@
         <module name="BibliothequeEureka" />
         <module name="BibliothequeBatchMail" />
         <module name="BibliothequeWeb" />
-        <module name="BibliothequeReservation" />
+        <module name="BibliothequeAdministration" />
         <module name="OCP7BibliothequeWeb" />
-        <module name="BibliothequeBook" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +19,8 @@
       <module name="BibliothequeAdministration (2)" target="15" />
       <module name="BibliothequeConfigServer" target="17" />
       <module name="BibliothequeGateway" target="16" />
+      <module name="BibliothequeReservation (1) (com.OCP7Bibliotheque)" target="15" />
+      <module name="BibliothequeReservation (2) (com.OCP10Bibliotheque)" target="15" />
       <module name="OCP7Bibliotheque" target="11" />
       <module name="OCP7BibliothequeWeb" target="17" />
     </bytecodeTargetLevel>
@@ -30,11 +31,12 @@
       <module name="BibliothequeAdministration (1)" options="-parameters" />
       <module name="BibliothequeAdministration (2)" options="-parameters" />
       <module name="BibliothequeBatchMail" options="-parameters" />
-      <module name="BibliothequeBook" options="-parameters" />
       <module name="BibliothequeConfigServer" options="-parameters" />
       <module name="BibliothequeEureka" options="-parameters" />
       <module name="BibliothequeGateway" options="-parameters" />
       <module name="BibliothequeReservation" options="-parameters" />
+      <module name="BibliothequeReservation (1) (com.OCP7Bibliotheque)" options="-parameters" />
+      <module name="BibliothequeReservation (2) (com.OCP10Bibliotheque)" options="-parameters" />
       <module name="BibliothequeSpringCloudConfig" options="-parameters" />
       <module name="BibliothequeWeb" options="-parameters" />
       <module name="OCP7Bibliotheque" options="-parameters" />

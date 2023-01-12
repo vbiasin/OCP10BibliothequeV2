@@ -11,7 +11,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="BibliothequeBook" />
+          <element id="module-output" name="BibliothequeReservation" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.5.6" />
@@ -117,7 +117,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/BibliothequeBook/target/BibliothequeBook-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="BibliothequeBook/web/Web" />
+      <element id="javaee-facet-resources" facet="BibliothequeReservation/web/Web" />
     </root>
   </artifact>
 </component>

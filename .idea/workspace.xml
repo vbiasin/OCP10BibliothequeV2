@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="link db for module book" />
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="link db for module book">
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Controller/ReservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/LibraryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/UserAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/ContactDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/LendingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/LibraryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/UserAccountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/IUserAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/UserAccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Proxies/BibliothequeReservationProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/reservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BibliothequeBook_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BibliothequeBook_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/template.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +46,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="github/ticket1" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -71,11 +123,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "15",
-    "last_opened_file_path": "D:/Projets/JAVA/Projet10/OCP10BibliothequeV2/config-server-repo",
+    "last_opened_file_path": "D:/Projets/JAVA/Projet10/OCP10BibliothequeV2/BibliothequeReservation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "9b515a01e9cc2b8011f3245dfe46ce3b",
     "vue.rearranger.settings.migration": "true"
   }
@@ -88,11 +143,11 @@
       <recent name="com.ocp7bibliotheque.bibliothequeweb.DTO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\config-server-repo" />
-      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation\src\main\java\com\ocp10bibliotheque\bibliothequereservation\Entites" />
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\config-server-repo" />
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeBatchMail\src\main\java\com\ocp7bibliotheque\bibliothequebatchmail\Entites" />
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeBatchMail\src\main\java\com\ocp7bibliotheque\bibliothequebatchmail" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation\src\main\resources" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeWeb\src\main\resources\Templates" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation\src\main\java\com\ocp10bibliotheque\bibliothequereservation\Services" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation\src\main\java\com\ocp10bibliotheque\bibliothequereservation\DAO" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeWeb\src\main\resources\static" />
@@ -108,7 +163,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeBookApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OCP7BibliothequeWeb" />
       <method v="2">
@@ -137,8 +192,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BibliothequeBookApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BibliothequeReservation (1) (com.OCP7Bibliotheque)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequebook.BibliothequeBookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BibliothequeBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="BibliothequeBook" />
+      <module name="BibliothequeReservation" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequebook.BibliothequeBookApplication" />
       <method v="2">
@@ -149,6 +211,13 @@
       <module name="BibliothequeEureka" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequeeureka.BibliothequeEurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BibliothequeReservationApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BibliothequeReservation (2) (com.OCP10Bibliotheque)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp10bibliotheque.bibliothequereservation.BibliothequeReservationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,6 +247,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.BibliothequeBookApplication (1)" />
+      <item itemvalue="Spring Boot.BibliothequeReservationApplication (1)" />
       <item itemvalue="Spring Boot.BibliothequeReservationApplication" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
@@ -295,14 +366,8 @@
       <workItem from="1673081857982" duration="1629000" />
       <workItem from="1673083861583" duration="1161000" />
       <workItem from="1673166637338" duration="610000" />
-      <workItem from="1673457664634" duration="7888000" />
-    </task>
-    <task id="LOCAL-00011" summary="Test login">
-      <created>1642009508525</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1642009508525</updated>
+      <workItem from="1673457664634" duration="8525000" />
+      <workItem from="1673544463530" duration="4714000" />
     </task>
     <task id="LOCAL-00012" summary="Test login">
       <created>1642009863390</created>
@@ -640,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673465826843</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="link db for module book">
+      <created>1673465877998</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1673465877998</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
