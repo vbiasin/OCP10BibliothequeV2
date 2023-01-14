@@ -11,6 +11,7 @@ public class Reservation implements Serializable {
     private int id;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
+    private String status;
     @OneToOne
     private UserAccount userAccount;
     @OneToOne
@@ -75,5 +76,13 @@ public class Reservation implements Serializable {
 
     public void setLibrary(Library library) {
         this.library = library;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
