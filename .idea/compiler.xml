@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BibliothequeSpringCloudConfig" />
         <module name="BibliothequeEureka" />
+        <module name="BibliothequeSpringCloudConfig" />
         <module name="BibliothequeBatchMail" />
         <module name="BibliothequeWeb" />
+        <module name="BibliothequeReservation" />
         <module name="BibliothequeAdministration" />
-        <module name="OCP7BibliothequeWeb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
