@@ -11,8 +11,8 @@ public class Reservation implements Serializable {
     private int id;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-
     private String status;
+    private boolean mailIsSend;
     @OneToOne
     private UserAccount userAccount;
     @OneToOne
@@ -29,6 +29,7 @@ public class Reservation implements Serializable {
         this.userAccount = userAccount;
         this.book = book;
         this.library = library;
+        this.mailIsSend = false;
     }
 
     public int getId() {
@@ -85,5 +86,13 @@ public class Reservation implements Serializable {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public boolean isMailIsSend() {
+        return mailIsSend;
+    }
+
+    public void setMailIsSend(boolean mailIsSend) {
+        this.mailIsSend = mailIsSend;
     }
 }

@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="link db for module book">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="modifs entité Reservation">
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/ReservationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/LendingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/LendingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -102,29 +101,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "15",
-    "last_opened_file_path": "D:/Projets/JAVA/Projet10/OCP10BibliothequeV2/BibliothequeAdministration/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "336bc28601f98635d709b26ba20d7703",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;15&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet10/OCP10BibliothequeV2/BibliothequeAdministration/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;336bc28601f98635d709b26ba20d7703&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -358,14 +356,9 @@
       <workItem from="1673166637338" duration="610000" />
       <workItem from="1673457664634" duration="8525000" />
       <workItem from="1673544463530" duration="4714000" />
-      <workItem from="1673688815019" duration="324000" />
-    </task>
-    <task id="LOCAL-00012" summary="Test login">
-      <created>1642009863390</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1642009863390</updated>
+      <workItem from="1673688815019" duration="1256000" />
+      <workItem from="1673758931490" duration="1229000" />
+      <workItem from="1673762438516" duration="2938000" />
     </task>
     <task id="LOCAL-00013" summary="Test login 19/01/2022">
       <created>1642613877885</created>
@@ -703,14 +696,20 @@
       <option name="project" value="LOCAL" />
       <updated>1673465877998</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="modifs entité Reservation">
+      <created>1673689170324</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1673689170324</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test recherche utilisateur + ajout role" />
     <MESSAGE value="Test recherche utilisateur + ajout / suppression role" />
     <MESSAGE value="Test recherche utilisateur 260320222" />
     <MESSAGE value="Test suppression role 06042022" />
@@ -735,7 +734,8 @@
     <MESSAGE value="utilisation ipv4 192.168.1.62" />
     <MESSAGE value="bibliothequeweb.properties change status db create to update" />
     <MESSAGE value="link db for module book" />
-    <option name="LAST_COMMIT_MESSAGE" value="link db for module book" />
+    <MESSAGE value="modifs entité Reservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifs entité Reservation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
