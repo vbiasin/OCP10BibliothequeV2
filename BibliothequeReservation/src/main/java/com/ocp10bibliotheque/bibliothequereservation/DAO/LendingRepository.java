@@ -1,0 +1,16 @@
+package com.ocp10bibliotheque.bibliothequereservation.DAO;
+
+
+import com.ocp10bibliotheque.bibliothequereservation.Entites.Book;
+import com.ocp10bibliotheque.bibliothequereservation.Entites.Lending;
+import com.ocp10bibliotheque.bibliothequereservation.Entites.UserAccount;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface LendingRepository extends JpaRepository<Lending,Integer> {
+
+    List<Lending> findByBookAndUserAccount(Book book, UserAccount userAccount) throws Exception;
+
+}

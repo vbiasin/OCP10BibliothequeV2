@@ -38,7 +38,10 @@ public class WebLendingController {
     @PostMapping("/borrow")
     public String borrow(@RequestParam int idBook) {
         UserDetails activeUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        LendingDTO lendingDTO = new LendingDTO(activeUser.getUsername(), idBook);
+        String mail = activeUser.getUsername();
+        System.out.println(mail);
+        LendingDTO lendingDTO = new LendingDTO(mail, idBook);
+
         bookProxy.borrow(lendingDTO);
         return  "book";
     }
