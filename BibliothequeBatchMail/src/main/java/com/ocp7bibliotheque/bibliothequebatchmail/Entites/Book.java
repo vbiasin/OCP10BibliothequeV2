@@ -137,12 +137,4 @@ public class Book implements Serializable {
         this.currentNumberReservation = currentNumberReservation;
     }
 
-    public int getNumberMaxReservation() {
-        return numberMaxReservation;
-    }
-
-    public void setNumberMaxReservation(int numberMaxReservation) {
-        this.numberMaxReservation = numberMaxReservation;
-    }
-
 }
