@@ -4,35 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="modifs entité Reservation + ajout repository">
-      <change afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/DAO/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/DAO/ReservationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/LendingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Mail/MyConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/IReservationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="modifs timezone + premiers tests sur l'appli">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Service/MailAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Service/MailAlert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/DAO/LendingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/DAO/LendingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/IBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeGateway/BibliothequeGateway.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/ReservationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebLendingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebLendingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeAdministration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeAdministration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeBatchMail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeBatchMail.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeBook.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeBook.properties" afterDir="false" />
@@ -176,7 +151,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequeadministration.Entites" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BibliothequeSpringCloudConfigApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OCP7BibliothequeWeb" />
       <method v="2">
@@ -391,14 +366,7 @@
       <workItem from="1674018215186" duration="4594000" />
       <workItem from="1674058849079" duration="8552000" />
       <workItem from="1674144697125" duration="608000" />
-      <workItem from="1674145994335" duration="7715000" />
-    </task>
-    <task id="LOCAL-00014" summary="Test login 19/01/2022">
-      <created>1642614001972</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1642614001974</updated>
+      <workItem from="1674145994335" duration="8085000" />
     </task>
     <task id="LOCAL-00015" summary="Test login 26/01/2022">
       <created>1643218691286</created>
@@ -736,14 +704,20 @@
       <option name="project" value="LOCAL" />
       <updated>1673815623330</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="modifs timezone + premiers tests sur l'appli">
+      <created>1674158641083</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1674158641083</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test recherche utilisateur 260320222" />
     <MESSAGE value="Test suppression role 06042022" />
     <MESSAGE value="Ajout suppression compte utilisateur.&#10;Test OK" />
     <MESSAGE value="Ajout suppression bibliotheque.&#10;Test OK" />
@@ -768,7 +742,8 @@
     <MESSAGE value="link db for module book" />
     <MESSAGE value="modifs entité Reservation" />
     <MESSAGE value="modifs entité Reservation + ajout repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifs entité Reservation + ajout repository" />
+    <MESSAGE value="modifs timezone + premiers tests sur l'appli" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifs timezone + premiers tests sur l'appli" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
