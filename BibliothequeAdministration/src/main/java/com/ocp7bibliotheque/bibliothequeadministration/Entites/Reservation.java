@@ -24,8 +24,6 @@ public class Reservation implements Serializable {
     }
 
     public Reservation(UserAccount userAccount, Book book, Library library) {
-        this.startDate = LocalDateTime.now();
-        this.endDate = startDate.plusDays(2);
         this.userAccount = userAccount;
         this.book = book;
         this.library = library;
@@ -95,4 +93,5 @@ public class Reservation implements Serializable {
     public void setMailIsSend(boolean mailIsSend) {
         this.mailIsSend = mailIsSend;
     }
+
 }

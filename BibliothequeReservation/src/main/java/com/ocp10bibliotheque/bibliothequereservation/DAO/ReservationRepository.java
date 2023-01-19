@@ -13,6 +13,9 @@ public interface ReservationRepository extends JpaRepository<Reservation,Integer
     Optional<Reservation> findById(int idReservation) throws Exception;
     List<Reservation> findByUserAccount(UserAccount userAccount) throws Exception;
 
-    List<Reservation> findByBook (Book book) throws Exception;
+    List<Reservation> findByBook(Book book) throws Exception;
+    List<Reservation> findByBookAndStatus(Book book, String status) throws Exception;
+
+    List<Reservation> findByBookAndUserAccount(Book book, UserAccount userAccount) throws Exception;
 
 }

@@ -137,5 +137,5 @@ public class Book implements Serializable {
     public void setCurrentNumberReservation(int currentNumberReservation) {
         this.currentNumberReservation = currentNumberReservation;
     }
-}
 
+}
