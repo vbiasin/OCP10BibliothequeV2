@@ -58,6 +58,46 @@ public class ReservationServiceImpl implements IReservationService{
 
     @Autowired
     ReservationRepository reservationRepository;
+
+    @Override
+    public void checkReservationConditionByUser(UserAccount userAccount, Book book) throws Exception {
+        //vérifier que le livre n'est pas emprunté par cet utilisateur.
+        List<Lending> lendingList = lendingRepository.findByBookAndUserAccount(book,userAccount);
+        for (Lending lending:lendingList){
+            if(!lending.getStatus().equals("Terminé"))throw new Exception("Cet utilisateur ne peut pas faire une réservation car un prêt est en cours pour cet ouvrage !");
+        }
+        //vérifier que cet utilisateur n'as pas déjà une réservation en cours pour cet ouvrage
+        List<Reservation> listReservation = reservationRepository.findByBookAndUserAccount(book,userAccount);
+        for (Reservation reservationFromList: listReservation){
+            if(reservationFromList.getStatus().equals("en attente") || reservationFromList.getStatus().equals("en cours"))
+                throw new Exception("Une réservation est déjà en cours pour cet utilisateur !");
+        }
+    }
+
+    @Override
+    public boolean checkFirstReservation(Reservation reservation) throws Exception {
+        List<Reservation> listReservation2 = reservationRepository.findByBook(reservation.getBook());
+        boolean check = true;
+        for (Reservation reservationFromList2: listReservation2){
+            if(!reservationFromList2.getStatus().equals("Terminée")) check = false;
+        }
+        return check;
+    }
+
+    @Override
+    public void startReservation(Reservation reservation) throws Exception {
+        reservation.setStatus("en cours");
+        reservation.setStartDate(LocalDateTime.now());
+        reservation.setEndDate(reservation.getStartDate().plusDays(2));
+        // on envoie le mail
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setTo(reservation.getUserAccount().getMail());
+        message.setSubject("Reservaton ce l'ouvrage: "+reservation.getBook().getTitle());
+        message.setText("Bonjour, l'ouvrage "+reservation.getBook().getTitle()+" a été réservé le " +reservation.getStartDate()+" à la librairie: "
+                +reservation.getLibrary().getName() + " ce dernier sera disponible pendant 48h.");
+        this.emailSender.send(message);
+        reservation.setMailIsSend(true);
+    }
     @Override
     public Reservation reserve(String userAccountMail, int idBook) throws Exception {
         Optional<Book> book = bookRepository.findById(idBook);
@@ -66,42 +106,36 @@ public class ReservationServiceImpl implements IReservationService{
         if(userAccount.isEmpty()) throw new Exception ("Cet utilisateur n'existe pas !");
         //vérifier si le nombre max de réservations pour cet ouvrage est atteint
         if((book.get().getNumberExemplarTotal()*2)<=book.get().getCurrentNumberReservation()) throw new Exception("Le nombre maximum de réservations est atteint !");
-        //vérifier que le livre n'est pas emprunté par cet utilisateur.
-        List<Lending> lendingList = lendingRepository.findByBookAndUserAccount(book.get(),userAccount.get());
-        for (Lending lending:lendingList){
-            if(!lending.getStatus().equals("Terminé"))throw new Exception("Cet utilisateur ne peut pas faire une réservation car un prêt est en cours pour cet ouvrage !");
-        }
-        //vérifier que cet utilisateur n'as pas déjà une réservation en cours pour cet ouvrage
-        List<Reservation> listReservation = reservationRepository.findByBookAndUserAccount(book.get(),userAccount.get());
-        for (Reservation reservationFromList: listReservation){
-            if(reservationFromList.getStatus().equals("en attente") || reservationFromList.getStatus().equals("en cours"))
-                throw new Exception("Une réservation est déjà en cours pour cet utilisateur !");
-        }
+        checkReservationConditionByUser(userAccount.get(),book.get());
         //Création de la réservation
         Reservation reservation = new Reservation(userAccount.get(),book.get(),book.get().getLibrary());
         //on vérifie si c'est la première réservation pour cet ouvrage: si oui on envoi le mail sinon status = "en attente"
-       List<Reservation> listReservation2 = reservationRepository.findByBook(book.get());
-       boolean check = false;
-        for (Reservation reservationFromList2: listReservation2){
-            if(!reservationFromList2.getStatus().equals("Terminée")) check = true;
-        }
-        if (check==true) reservation.setStatus("en attente");
+        if (checkFirstReservation(reservation)==false) reservation.setStatus("en attente");
         else{
-            reservation.setStatus("en cours");
-            // on envoie le mail
-            SimpleMailMessage message = new SimpleMailMessage();
-            message.setTo(userAccount.get().getMail());
-            message.setSubject("Reservaton ce l'ouvrage: "+book.get().getTitle());
-            message.setText("Bonjour, l'ouvrage "+book.get().getTitle()+" a été réservé le " +reservation.getStartDate()+" à la librairie: "
-                    +reservation.getLibrary().getName() + " ce dernier sera disponible pendant 48h.");
-            this.emailSender.send(message);
-            reservation.setMailIsSend(true);
-            reservation.setStartDate(LocalDateTime.now());
-            reservation.setEndDate(reservation.getStartDate().plusDays(2));
+            startReservation(reservation);
         }
         reservation.getBook().setCurrentNumberReservation(reservation.getBook().getCurrentNumberReservation()+1);
         bookRepository.saveAndFlush(reservation.getBook());
         return reservationRepository.save(reservation);
+    }
+
+    @Override
+    public void checkCurrentPosition(int idReservation, String userAccountMail) throws Exception {
+        Optional<Reservation> reservation = reservationRepository.findById(idReservation);
+        if (reservation.isEmpty()) throw new Exception("Cette réservation n'existe pas !");
+        List<Reservation> reservations = reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente");
+        int currentPosition = 1;
+        boolean check = false;
+        for (Reservation reservationFromList:reservations){
+            if(check == false){
+                if (!reservationFromList.getUserAccount().equals(userAccountMail)) {
+                    currentPosition=currentPosition+1;
+                }
+                else check=true;
+            }
+        }
+        reservation.get().setCurrentPosition(currentPosition);
+        reservationRepository.saveAndFlush(reservation.get());
     }
 
     @Override
@@ -111,6 +145,13 @@ public class ReservationServiceImpl implements IReservationService{
         for (Role role:userAccount.get().getRoles()
         ) {
             if (role.getName().equals("ADMIN") || role.getName().equals("EMPLOYEE")) return reservationRepository.findAll();
+        }
+        List<Reservation> reservationList = reservationRepository.findAll();
+        for (Reservation reservation:reservationList){
+            if (reservation.getStatus().equals("en attente")){
+                checkCurrentPosition(reservation.getId(),userAccountMail);
+            }
+
         }
         return reservationRepository.findByUserAccount(userAccount.get());
     }
@@ -143,19 +184,7 @@ public class ReservationServiceImpl implements IReservationService{
         reservationRepository.saveAndFlush(reservation.get());
     }
 
-    @Override
-    public int checkCurrentPosition(int idReservation) throws Exception {
-        Optional<Reservation> reservation = reservationRepository.findById(idReservation);
-        if (reservation.isEmpty()) throw new Exception("Cette réservation n'existe pas !");
-        List<Reservation> reservations = reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente");
-        int currentPosition = 1;
-        boolean check = false;
-        for (Reservation reservationFromList:reservations){
-            if(check == false){
-                if (!reservationFromList.getUserAccount().equals(reservation.get().getUserAccount())) currentPosition=currentPosition+1;
-                else check=true;
-            }
-        }
-        return currentPosition;
-    }
+
+
+
 }

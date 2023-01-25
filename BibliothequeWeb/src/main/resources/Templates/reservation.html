@@ -16,21 +16,19 @@
                     <h3 class="card-title">Historique des réservations !</h3>
                     <table class="table table-striped">
                         <tr>
-                            <th>ID</th><th>Titre</th><th>Auteur</th><th>Bibliotheque</th><th>Adresse</th><th>Status</th><th>Prolonger</th><th sec:authorize="hasAuthority('EMPLOYEE')">Nom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Prénom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Adresse</th>
+                            <th>ID</th><th>Titre</th><th>Auteur</th><th>Bibliotheque</th><th>Adresse</th><th>Position dans la file d'attente</th><th>Status</th><th sec:authorize="hasAuthority('EMPLOYEE')">Nom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Prénom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Adresse</th>
                         </tr>
-                        <tr th:each="loan:${listLoans}">
-                            <td th:text= "${loan.id}"></td>
-                            <td th:text= "${loan.book.title}"></td>
-                            <td th:text= "${loan.book.author}"></td>
-                            <td th:text= "${loan.book.library.name}"></td>
-                            <td th:text= "${loan.book.library.address}"></td>
-                            <td th:text= "${loan.status}"></td>
-                            <td >
-                               <form   th:if="${loan.status=='en cours'}" th:action="@{/extendLoan(idLending=${loan.id})}" method="post"><button type="submit"  >Prolonger</button></form>
-                            </td>
-                            <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${loan.userAccount.contact.lastName}"></td>
-                            <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${loan.userAccount.contact.firstName}"></td>
-                            <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${loan.userAccount.contact.address}"></td>
+                        <tr th:each="reservation:${listReservations}">
+                            <td th:text= "${reservation.id}"></td>
+                            <td th:text= "${reservation.book.title}"></td>
+                            <td th:text= "${reservation.book.author}"></td>
+                            <td th:text= "${reservation.book.library.name}"></td>
+                            <td th:text= "${reservation.book.library.address}"></td>
+                            <td th:text= "${reservation.currentPosition}"></td>
+                            <td th:text= "${reservation.status}"></td>
+                            <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${reservation.userAccount.contact.lastName}"></td>
+                            <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${reservation.userAccount.contact.firstName}"></td>
+                            <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${reservation.userAccount.contact.address}"></td>
                         </tr>
                     </table>
                 </div>

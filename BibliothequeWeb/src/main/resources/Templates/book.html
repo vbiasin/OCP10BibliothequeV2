@@ -85,7 +85,7 @@
                             <td th:text= "${book.library.address}"></td>
                             <td th:text= "${book.currentNumberReservation}"></td>
                             <td  ><form th:if="${book.getAvailable}" th:action="@{/borrow(idBook=${book.id})}" method="post"><button type="submit"  >Emprunter</button></form></td>
-                            <td  ><form th:if="!${book.getAvailable}" th:action="@{/reserve(idBook=${book.id})}" method="post"><button type="submit"  >Réserver</button></form></td>
+                            <td  ><form th:if="!${book.getAvailable} and (${book.currentNumberReservation} < ${book.numberMaxReservation})" th:action="@{/reserve(idBook=${book.id})}" method="post"><button type="submit"  >Réserver</button></form></td>
                             <td  sec:authorize="hasAuthority('EMPLOYEE')">
                                 <form th:action="@{/modifyBook(idBook=${book.id})}" method="post">
                                     <div>
