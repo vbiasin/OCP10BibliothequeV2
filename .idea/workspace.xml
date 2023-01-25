@@ -4,16 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="modifs timezone">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="modifs Book + LendingDTO">
+      <change afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/DTO/ReservationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/DTO/ReservationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/ReservationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/DTO/ReservationDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/DTO/LendingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/DTO/LendingDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/DTO/LendingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/DTO/LendingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/LendingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DTO/LendingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/IBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Controller/ReservationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/DTO/LendingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/DTO/LendingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/IReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/IReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebLendingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebLendingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Proxies/BibliothequeReservationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Proxies/BibliothequeReservationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/reservation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +144,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ocp10bibliotheque.bibliothequereservation.Controller" />
       <recent name="com.ocp7bibliotheque.bibliothequeweb.DTO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -142,17 +159,18 @@
       <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeWeb\src\main\resources\static\css" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ocp10bibliotheque.bibliothequereservation.DTO" />
       <recent name="com.ocp7bibliotheque.bibliothequeweb" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ocp7bibliotheque.bibliothequeweb.DTO" />
+      <recent name="com.ocp7bibliotheque.bibliothequebook.DTO" />
+      <recent name="com.ocp7bibliotheque.bibliothequeadministration.DTO" />
       <recent name="com.ocp7bibliotheque.bibliothequebatchmail.DAO" />
       <recent name="com.ocp10bibliotheque.bibliothequereservation.DAO" />
-      <recent name="com.ocp10bibliotheque.bibliothequereservation" />
-      <recent name="com.ocp7bibliotheque.bibliothequeadministration.DAO" />
-      <recent name="com.ocp7bibliotheque.bibliothequeadministration.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeSpringCloudConfigApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeBatchMailApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OCP7BibliothequeWeb" />
       <method v="2">
@@ -181,16 +199,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BibliothequeBookApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="BibliothequeReservation (1) (com.OCP7Bibliotheque)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequebook.BibliothequeBookApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BibliothequeBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="BibliothequeReservation" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <module name="BibliothequeBook" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequebook.BibliothequeBookApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -200,13 +210,6 @@
       <module name="BibliothequeEureka" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequeeureka.BibliothequeEurekaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BibliothequeReservationApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="BibliothequeReservation (2) (com.OCP10Bibliotheque)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp10bibliotheque.bibliothequereservation.BibliothequeReservationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -236,8 +239,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.BibliothequeBookApplication (1)" />
-      <item itemvalue="Spring Boot.BibliothequeReservationApplication (1)" />
       <item itemvalue="Spring Boot.BibliothequeReservationApplication" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
@@ -367,14 +368,11 @@
       <workItem from="1674018215186" duration="4594000" />
       <workItem from="1674058849079" duration="8552000" />
       <workItem from="1674144697125" duration="608000" />
-      <workItem from="1674145994335" duration="8923000" />
-    </task>
-    <task id="LOCAL-00016" summary="Test2 login 26/01/2022">
-      <created>1643218915849</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1643218915849</updated>
+      <workItem from="1674145994335" duration="9071000" />
+      <workItem from="1674228290989" duration="11000" />
+      <workItem from="1674397744473" duration="614000" />
+      <workItem from="1674498324756" duration="3071000" />
+      <workItem from="1674661841241" duration="10559000" />
     </task>
     <task id="LOCAL-00017" summary="Test2 login 26/01/2022">
       <created>1643219308135</created>
@@ -712,14 +710,20 @@
       <option name="project" value="LOCAL" />
       <updated>1674158989528</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="modifs Book + LendingDTO">
+      <created>1674159832042</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1674159832042</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout suppression compte utilisateur.&#10;Test OK" />
     <MESSAGE value="Ajout suppression bibliotheque.&#10;Test OK" />
     <MESSAGE value="Modification structure entitée Book" />
     <MESSAGE value="Modification structure entitée Book + Library" />
@@ -744,7 +748,8 @@
     <MESSAGE value="modifs entité Reservation + ajout repository" />
     <MESSAGE value="modifs timezone + premiers tests sur l'appli" />
     <MESSAGE value="modifs timezone" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifs timezone" />
+    <MESSAGE value="modifs Book + LendingDTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifs Book + LendingDTO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

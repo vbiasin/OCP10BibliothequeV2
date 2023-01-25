@@ -12,6 +12,7 @@ public class Reservation implements Serializable {
     private LocalDateTime startDate;
     private LocalDateTime endDate;
     private String status;
+    private int currentPosition;
     private boolean mailIsSend;
     @OneToOne
     private UserAccount userAccount;
@@ -94,4 +95,11 @@ public class Reservation implements Serializable {
         this.mailIsSend = mailIsSend;
     }
 
+    public int getCurrentPosition() {
+        return currentPosition;
+    }
+
+    public void setCurrentPosition(int currentPosition) {
+        this.currentPosition = currentPosition;
+    }
 }

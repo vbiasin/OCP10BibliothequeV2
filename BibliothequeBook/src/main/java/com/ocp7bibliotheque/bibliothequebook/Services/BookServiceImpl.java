@@ -60,6 +60,7 @@ public class BookServiceImpl implements IBookService {
         if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
         if(numberExemplarTotal<=0) throw new Exception("Le nombre d'exemplaires ne peut être nul ou négatif !");
         book.get().setNumberExemplarTotal(numberExemplarTotal);
+        book.get().setNumberMaxReservation(2*numberExemplarTotal);
         return bookRepository.saveAndFlush(book.get());
     }
 
@@ -85,7 +86,7 @@ public class BookServiceImpl implements IBookService {
         return noDoublonBooks;
     }
 
-    @Override
+   /* @Override
     public LocalDateTime nextReturn(int idBook) throws Exception {
         Optional<Book> book = bookRepository.findById(idBook);
         if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
@@ -103,5 +104,5 @@ public class BookServiceImpl implements IBookService {
 
         }
         return date;
-    }
+    }*/
 }

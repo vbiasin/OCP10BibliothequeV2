@@ -12,5 +12,5 @@ public interface IBookService {
     public Book addBook(int idLibrary,Book book) throws Exception;
     public Book modifyBook(int idBook, int numberExemplar) throws Exception;
     public List<Book> searchBook(String name, String author) throws Exception;
-    public LocalDateTime nextReturn(int idBook) throws Exception;
+    //public LocalDateTime nextReturn(int idBook) throws Exception;
 }
