@@ -2,6 +2,7 @@ package com.ocp10bibliotheque.bibliothequereservation.Entites;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -13,6 +14,7 @@ public class Book implements Serializable {
     private Library library;
     private Boolean isAvailable;
     private Date publicationDate;
+    private LocalDateTime nextReturn;
     private String resume;
     private String title;
     private String author;
@@ -143,5 +145,13 @@ public class Book implements Serializable {
 
     public void setNumberMaxReservation(int numberMaxReservation) {
         this.numberMaxReservation = numberMaxReservation;
+    }
+
+    public LocalDateTime getNextReturn() {
+        return nextReturn;
+    }
+
+    public void setNextReturn(LocalDateTime nextReturn) {
+        this.nextReturn = nextReturn;
     }
 }
