@@ -44,4 +44,10 @@ public class WebReservationController {
         reservationProxy.reserve(reservationDTO);
         return  "book";
     }
+
+    @PostMapping("/cancelReservation")
+    public String removeUserAccount(@RequestParam int idReservation) {
+        reservationProxy.cancelReservation(idReservation);
+        return "redirect:reservation";
+    }
 }

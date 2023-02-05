@@ -68,12 +68,8 @@ public class LendingServiceImpl implements ILendingService {
         Optional<Book> book = bookRepository.findById(lending.get().getBook().getId());
         if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
         book.get().setNumberExemplarActual(book.get().getNumberExemplarActual()+1);
-        // si le livre est réservé il faut envoyer un mail au premier de la liste
-        if(book.get().getCurrentNumberReservation()!=0){
-
-        }
-        else {
-            if(book.get().getAvailable()==false)book.get().setAvailable(true);
+        if(book.get().getCurrentNumberReservation()==0 && book.get().getAvailable()==false){
+            book.get().setAvailable(true);
         }
         bookRepository.saveAndFlush(book.get());
         lending.get().setStatus("Terminé");

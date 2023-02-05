@@ -8,13 +8,11 @@ import com.ocp10bibliotheque.bibliothequereservation.Entites.*;
 import com.ocp10bibliotheque.bibliothequereservation.Mail.MyConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
@@ -98,6 +96,8 @@ public class ReservationServiceImpl implements IReservationService{
         this.emailSender.send(message);
         reservation.setMailIsSend(true);
     }
+
+
     @Override
     public Reservation reserve(String userAccountMail, int idBook) throws Exception {
         Optional<Book> book = bookRepository.findById(idBook);
@@ -138,6 +138,21 @@ public class ReservationServiceImpl implements IReservationService{
         reservationRepository.saveAndFlush(reservation.get());
     }
 
+
+    @Override
+    public void checkNextReturnOfBook(int idBook) throws Exception {
+        Optional<Book> book = bookRepository.findById(idBook);
+        if (book.isEmpty()) throw new Exception("Ce livre n'existe pas !");
+        List<Lending> lendings = lendingRepository.findByBook(book.get());
+        LocalDateTime nextReturn = null;
+        for  (Lending lending:lendings){
+            if(nextReturn==null) nextReturn=lending.getEndDate();
+            if(nextReturn.isAfter(lending.getEndDate()))nextReturn=nextReturn=lending.getEndDate();
+        }
+        book.get().setNextReturn(nextReturn);
+        bookRepository.saveAndFlush(book.get());
+    }
+
     @Override
     public List<Reservation> displayReservationByUser(String userAccountMail) throws Exception {
         Optional<UserAccount> userAccount = userAccountRepository.findByMail(userAccountMail);
@@ -150,6 +165,7 @@ public class ReservationServiceImpl implements IReservationService{
         for (Reservation reservation:reservationList){
             if (reservation.getStatus().equals("en attente")){
                 checkCurrentPosition(reservation.getId(),userAccountMail);
+                checkNextReturnOfBook(reservation.getBook().getId());
             }
 
         }
@@ -183,8 +199,5 @@ public class ReservationServiceImpl implements IReservationService{
         reservation.get().getBook().setCurrentNumberReservation(reservation.get().getBook().getCurrentNumberReservation()-1);
         reservationRepository.saveAndFlush(reservation.get());
     }
-
-
-
 
 }

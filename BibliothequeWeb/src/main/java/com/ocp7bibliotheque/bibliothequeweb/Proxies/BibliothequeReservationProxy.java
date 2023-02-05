@@ -22,4 +22,7 @@ public interface BibliothequeReservationProxy {
     @GetMapping(value="/displayReservationsBack")
     List<Reservation> displayReservations(@RequestParam("activeUsername") String activeUsername);
 
+    @PostMapping(value = "/cancelReservationBack")
+    void cancelReservation(@RequestBody int idReservation);
+
 }

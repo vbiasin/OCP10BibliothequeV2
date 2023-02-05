@@ -16,7 +16,7 @@
                     <h3 class="card-title">Historique des réservations !</h3>
                     <table class="table table-striped">
                         <tr>
-                            <th>ID</th><th>Titre</th><th>Auteur</th><th>Bibliotheque</th><th>Adresse</th><th>Position dans la file d'attente</th><th>Status</th><th sec:authorize="hasAuthority('EMPLOYEE')">Nom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Prénom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Adresse</th>
+                            <th>ID</th><th>Titre</th><th>Auteur</th><th>Bibliotheque</th><th>Adresse</th><th>Position dans la file d'attente</th><th>Status</th><th>Date prochain retour</th><th>Annuler Réservation</th><th sec:authorize="hasAuthority('EMPLOYEE')">Valider Réservation</th><th sec:authorize="hasAuthority('ADMIN')">Supprimer Réservation</th><th sec:authorize="hasAuthority('EMPLOYEE')">Nom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Prénom</th><th sec:authorize="hasAuthority('EMPLOYEE')">Adresse</th>
                         </tr>
                         <tr th:each="reservation:${listReservations}">
                             <td th:text= "${reservation.id}"></td>
@@ -26,6 +26,22 @@
                             <td th:text= "${reservation.book.library.address}"></td>
                             <td th:text= "${reservation.currentPosition}"></td>
                             <td th:text= "${reservation.status}"></td>
+                            <td th:text= "${reservation.book.nextReturn}"></td>
+                            <td>
+                                <form th:action="@{/cancelReservation(idReservation=${reservation.id})}" method="post">
+
+                                    <button type="submit"  >Annuler Réservation</button></form>
+                            </td>
+                            <td sec:authorize="hasAuthority('EMPLOYEE')">
+                                <form th:action="@{/validateReservation(idReservation=${reservation.id})}" method="post">
+
+                                    <button type="submit"  >Valider Réservation</button></form>
+                            </td>
+                            <td sec:authorize="hasAuthority('ADMIN')">
+                                <form th:action="@{/deleteReservation(idReservation=${reservation.id})}" method="post">
+
+                                    <button type="submit"  >Supprimer Réservation</button></form>
+                            </td>
                             <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${reservation.userAccount.contact.lastName}"></td>
                             <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${reservation.userAccount.contact.firstName}"></td>
                             <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${reservation.userAccount.contact.address}"></td>

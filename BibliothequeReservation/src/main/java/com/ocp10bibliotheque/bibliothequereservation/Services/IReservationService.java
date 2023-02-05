@@ -21,4 +21,6 @@ public interface IReservationService {
     public boolean checkFirstReservation(Reservation reservation) throws Exception;
     public void startReservation(Reservation reservation) throws Exception;
 
+    public void checkNextReturnOfBook(int idBook) throws Exception;
+
 }

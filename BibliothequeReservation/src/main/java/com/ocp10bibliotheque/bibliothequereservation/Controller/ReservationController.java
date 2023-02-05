@@ -49,4 +49,14 @@ public class ReservationController {
         }
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
+    @PostMapping("/cancelReservationBack")
+    public ResponseEntity<String>cancelReservation(@RequestBody int idReservation) throws Exception {
+        try {
+            reservationService.cancelReservation(idReservation);
+            return new ResponseEntity<String>("", HttpStatus.OK);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    }
 }

@@ -85,24 +85,4 @@ public class BookServiceImpl implements IBookService {
 
         return noDoublonBooks;
     }
-
-   /* @Override
-    public LocalDateTime nextReturn(int idBook) throws Exception {
-        Optional<Book> book = bookRepository.findById(idBook);
-        if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
-        List<Lending> lendings = lendingRepository.findByBookOrderByEndDate(book.get());
-        boolean check =false;
-        LocalDateTime date = null;
-        for(Lending lending:lendings) {
-            if (check==false){
-                if (lending.getStatus().equals("Prolongé") || lending.getStatus().equals("en cours")){
-                    date=lending.getEndDate();
-                    check =true;
-                }
-            }
-
-
-        }
-        return date;
-    }*/
 }
