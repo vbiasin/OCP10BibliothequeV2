@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="reset BDD">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Ajout date prochain retour et bouton pour annuiler réservation">
+      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/ReservationServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/LendingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/LendingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/IReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/IReservationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="D:\Projets\JAVA\Projet10\Repports\BibliothequeReservation" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,28 +101,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;15&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet10/OCP10BibliothequeV2/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;336bc28601f98635d709b26ba20d7703&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "15",
+    "last_opened_file_path": "D:/Projets/JAVA/Projet10/Repports/BibliothequeReservation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "336bc28601f98635d709b26ba20d7703",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -137,6 +143,7 @@
       <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeWeb\src\main\resources\static\css" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ocp10bibliotheque.bibliothequereservation" />
       <recent name="com.ocp10bibliotheque.bibliothequereservation.DTO" />
       <recent name="com.ocp7bibliotheque.bibliothequeweb" />
     </key>
@@ -148,7 +155,57 @@
       <recent name="com.ocp10bibliotheque.bibliothequereservation.DAO" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeBatchMailApplication">
+  <component name="RunManager" selected="JUnit.ReservationServiceImplTest.checkReservationConditionByUserLoanOK">
+    <configuration name="ReservationServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-19" />
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceImplTest.checkReservationConditionByUserLoanNOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="checkReservationConditionByUserLoanNOK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceImplTest.checkReservationConditionByUserLoanOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="checkReservationConditionByUserLoanOK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OCP7BibliothequeWeb" />
       <method v="2">
@@ -217,6 +274,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ReservationServiceImplTest" />
+      <item itemvalue="JUnit.ReservationServiceImplTest.checkReservationConditionByUserLoanNOK" />
+      <item itemvalue="JUnit.ReservationServiceImplTest.checkReservationConditionByUserLoanOK" />
       <item itemvalue="Spring Boot.BibliothequeReservationApplication" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
@@ -225,6 +285,13 @@
       <item itemvalue="Spring Boot.BibliothequeBookApplication" />
       <item itemvalue="Spring Boot.BibliothequeBatchMailApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ReservationServiceImplTest.checkReservationConditionByUserLoanOK" />
+        <item itemvalue="JUnit.ReservationServiceImplTest.checkReservationConditionByUserLoanNOK" />
+        <item itemvalue="JUnit.ReservationServiceImplTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -351,14 +418,9 @@
       <workItem from="1674397744473" duration="614000" />
       <workItem from="1674498324756" duration="3071000" />
       <workItem from="1674661841241" duration="10693000" />
-      <workItem from="1675616559037" duration="10614000" />
-    </task>
-    <task id="LOCAL-00020" summary="modif lending">
-      <created>1644353123777</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1644353123777</updated>
+      <workItem from="1675616559037" duration="10690000" />
+      <workItem from="1675861408689" duration="7726000" />
+      <workItem from="1675869481066" duration="7512000" />
     </task>
     <task id="LOCAL-00021" summary="modif employee, userAccount et suppression Member">
       <created>1645028963231</created>
@@ -696,14 +758,20 @@
       <option name="project" value="LOCAL" />
       <updated>1675625893634</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Ajout date prochain retour et bouton pour annuiler réservation">
+      <created>1675627212106</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1675627212106</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modification structure entitée Book + Library" />
     <MESSAGE value="Ajout Proxies" />
     <MESSAGE value="Modification structure lending" />
     <MESSAGE value="Test modification et suppression livre" />
@@ -728,7 +796,8 @@
     <MESSAGE value="modifs Book + LendingDTO" />
     <MESSAGE value="ajouter le bouton pour annuler la réservation, la date du prochain retour et les tests unitaires pour le 01/02/2023" />
     <MESSAGE value="reset BDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="reset BDD" />
+    <MESSAGE value="Ajout date prochain retour et bouton pour annuiler réservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout date prochain retour et bouton pour annuiler réservation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,5 +809,13 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest_checkReservationConditionByUserLoanNOK.ic" NAME="ReservationServiceImplTest.checkReservationConditionByUserLoanNOK Coverage Results" MODIFIED="1675872026021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ocp10bibliotheque.bibliothequereservation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest.exec" NAME="ReservationServiceImplTest Coverage Results" MODIFIED="1675872242680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.ocp10bibliotheque.bibliothequereservation.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -13,14 +13,15 @@ public interface IReservationService {
     public void cancelReservation(int idReservation) throws Exception;
     public void deleteReservation(int idReservation) throws Exception;
     public void validateReservation(int idReservation) throws Exception;
-
     public void checkCurrentPosition(int idReservation, String userAccountMail) throws Exception;
-
     public void checkReservationConditionByUser(UserAccount userAccount, Book book) throws Exception;
-
+    public void checkReservationConditionByUserLoan(UserAccount userAccount, Book book) throws Exception;
+    public void checkReservationConditionByUserReservation(UserAccount userAccount, Book book) throws Exception;
     public boolean checkFirstReservation(Reservation reservation) throws Exception;
     public void startReservation(Reservation reservation) throws Exception;
 
     public void checkNextReturnOfBook(int idBook) throws Exception;
+
+    public Reservation getNextReservation(List<Reservation> reservations) throws Exception;
 
 }
