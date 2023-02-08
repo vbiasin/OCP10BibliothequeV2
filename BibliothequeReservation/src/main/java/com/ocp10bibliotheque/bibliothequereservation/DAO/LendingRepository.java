@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public interface LendingRepository extends JpaRepository<Lending,Integer> {
 
-    List<Lending> findByBookAndUserAccount(Book book, UserAccount userAccount) throws Exception;
+    List<Lending> findByBookIdAndUserAccountMail(int id, String userAccountMail) throws Exception;
     List<Lending> findByBook(Book book) throws Exception;
 
 }

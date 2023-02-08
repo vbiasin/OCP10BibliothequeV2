@@ -28,23 +28,19 @@ public class ReservationServiceImpl implements IReservationService{
 
     @Autowired
     public JavaMailSender emailSender;
-
     @Bean
     public JavaMailSender getJavaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(465);
-
         mailSender.setUsername(MyConstants.MY_EMAIL);
         mailSender.setPassword(MyConstants.MY_PASSWORD);
-
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
         props.put("mail.smtp.ssl.enable", "true");
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.debug", "true");
-
         return mailSender;
     }
 
@@ -58,12 +54,16 @@ public class ReservationServiceImpl implements IReservationService{
     ReservationRepository reservationRepository;
 
     @Override
-    public void checkReservationConditionByUser(UserAccount userAccount, Book book) throws Exception {
+    public void checkReservationConditionByUserLoan(UserAccount userAccount, Book book) throws Exception {
         //vérifier que le livre n'est pas emprunté par cet utilisateur.
-        List<Lending> lendingList = lendingRepository.findByBookAndUserAccount(book,userAccount);
+        List<Lending> lendingList = lendingRepository.findByBookIdAndUserAccountMail(book.getId(),userAccount.getMail());
         for (Lending lending:lendingList){
             if(!lending.getStatus().equals("Terminé"))throw new Exception("Cet utilisateur ne peut pas faire une réservation car un prêt est en cours pour cet ouvrage !");
         }
+    }
+
+    @Override
+    public void checkReservationConditionByUserReservation(UserAccount userAccount, Book book) throws Exception {
         //vérifier que cet utilisateur n'as pas déjà une réservation en cours pour cet ouvrage
         List<Reservation> listReservation = reservationRepository.findByBookAndUserAccount(book,userAccount);
         for (Reservation reservationFromList: listReservation){
@@ -71,6 +71,13 @@ public class ReservationServiceImpl implements IReservationService{
                 throw new Exception("Une réservation est déjà en cours pour cet utilisateur !");
         }
     }
+
+    @Override
+    public void checkReservationConditionByUser(UserAccount userAccount, Book book) throws Exception {
+       checkReservationConditionByUserLoan(userAccount,book);
+       checkReservationConditionByUserReservation(userAccount, book);
+    }
+
 
     @Override
     public boolean checkFirstReservation(Reservation reservation) throws Exception {
@@ -153,6 +160,8 @@ public class ReservationServiceImpl implements IReservationService{
         bookRepository.saveAndFlush(book.get());
     }
 
+
+
     @Override
     public List<Reservation> displayReservationByUser(String userAccountMail) throws Exception {
         Optional<UserAccount> userAccount = userAccountRepository.findByMail(userAccountMail);
@@ -173,11 +182,28 @@ public class ReservationServiceImpl implements IReservationService{
     }
 
     @Override
+    public Reservation getNextReservation(List<Reservation> reservations) throws Exception {
+        Reservation nextReservation = null;
+        for (Reservation reservation:reservations){
+            if(nextReservation == null){
+                nextReservation=reservation;
+            }
+            else if(nextReservation.getId()>reservation.getId()){
+                nextReservation = reservation;
+            }
+        }
+        return nextReservation;
+    }
+
+    @Override
     public void cancelReservation(int idReservation) throws Exception {
         Optional<Reservation> reservation = reservationRepository.findById(idReservation);
         if (reservation.isEmpty()) throw new Exception("Cette réservation n'existe pas !");
         reservation.get().setStatus("Annulée");
         reservation.get().getBook().setCurrentNumberReservation(reservation.get().getBook().getCurrentNumberReservation()-1);
+        bookRepository.saveAndFlush(reservation.get().getBook());
+        Reservation nextReservation = getNextReservation(reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente"));
+        if(nextReservation!=null) reserve(nextReservation.getUserAccount().getMail(),nextReservation.getBook().getId());
         reservationRepository.saveAndFlush(reservation.get());
     }
 
@@ -187,7 +213,10 @@ public class ReservationServiceImpl implements IReservationService{
         Optional<Reservation> reservation = reservationRepository.findById(idReservation);
         if (reservation.isEmpty()) throw new Exception("Cette réservation n'existe pas !");
         reservation.get().getBook().setCurrentNumberReservation(reservation.get().getBook().getCurrentNumberReservation()-1);
+        bookRepository.saveAndFlush(reservation.get().getBook());
         reservationRepository.delete(reservation.get());
+        Reservation nextReservation = getNextReservation(reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente"));
+        if(nextReservation!=null) reserve(nextReservation.getUserAccount().getMail(),nextReservation.getBook().getId());
     }
 
     @Override
@@ -197,6 +226,8 @@ public class ReservationServiceImpl implements IReservationService{
         if (reservation.isEmpty()) throw new Exception("Cette réservation n'existe pas !");
         reservation.get().setStatus("Terminée");
         reservation.get().getBook().setCurrentNumberReservation(reservation.get().getBook().getCurrentNumberReservation()-1);
+        Reservation nextReservation = getNextReservation(reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente"));
+        if(nextReservation!=null) reserve(nextReservation.getUserAccount().getMail(),nextReservation.getBook().getId());
         reservationRepository.saveAndFlush(reservation.get());
     }
 
