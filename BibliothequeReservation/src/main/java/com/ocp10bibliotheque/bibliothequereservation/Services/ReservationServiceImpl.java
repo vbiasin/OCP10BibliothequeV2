@@ -28,6 +28,14 @@ public class ReservationServiceImpl implements IReservationService{
 
     @Autowired
     public JavaMailSender emailSender;
+
+    public ReservationServiceImpl(LendingRepository lendingRepository) {
+    }
+
+    public ReservationServiceImpl() {
+
+    }
+
     @Bean
     public JavaMailSender getJavaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
