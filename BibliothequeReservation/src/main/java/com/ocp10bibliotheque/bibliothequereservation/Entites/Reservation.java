@@ -31,6 +31,12 @@ public class Reservation implements Serializable {
         this.mailIsSend = false;
     }
 
+    public Reservation(String status, UserAccount userAccount, Book book) {
+        this.status = status;
+        this.userAccount = userAccount;
+        this.book = book;
+    }
+
     public int getId() {
         return id;
     }
