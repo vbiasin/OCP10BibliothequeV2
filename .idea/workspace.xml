@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Début Tests">
-      <change afterPath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" afterDir="false" />
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="premiers tests fonctionnels">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Lending.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Lending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/ReservationServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Lending.class" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Lending.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +166,7 @@
       <recent name="com.ocp10bibliotheque.bibliothequereservation.DAO" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReservationServiceImplTest">
+  <component name="RunManager" selected="JUnit.ReservationServiceImplTest.testReserveWithValidParameters">
     <configuration name="ReservationServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeReservation" />
       <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
@@ -180,7 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReservationServiceImplTest.testCheckReservationConditionByUserLoan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReservationServiceImplTest.testCheckReservationConditionByUserLoanNOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeReservation" />
       <extension name="coverage">
         <pattern>
@@ -190,7 +193,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
       <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
-      <option name="METHOD_NAME" value="testCheckReservationConditionByUserLoan" />
+      <option name="METHOD_NAME" value="testCheckReservationConditionByUserLoanNOK" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,33 +215,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReservationServiceImplTest.testCheckReservationConditionByUserLoan_borrowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReservationServiceImplTest.testReserveWithValidParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeReservation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.*" />
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.ReservationServiceImplTest" />
-      <option name="METHOD_NAME" value="testCheckReservationConditionByUserLoan_borrowed" />
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="testReserveWithValidParameters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReservationServiceImplTest.testCheckReservationConditionByUserLoan_notBorrowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReservationServiceImplTest.testStartReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeReservation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.*" />
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.ReservationServiceImplTest" />
-      <option name="METHOD_NAME" value="testCheckReservationConditionByUserLoan_notBorrowed" />
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="testStartReservation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -312,10 +315,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoanNOK" />
+      <item itemvalue="JUnit.ReservationServiceImplTest.testReserveWithValidParameters" />
+      <item itemvalue="JUnit.ReservationServiceImplTest.testStartReservation" />
       <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoanOK" />
-      <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoan" />
-      <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoan_borrowed" />
-      <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoan_notBorrowed" />
       <item itemvalue="JUnit.ReservationServiceImplTest" />
       <item itemvalue="Spring Boot.BibliothequeReservationApplication" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
@@ -327,11 +330,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReservationServiceImplTest.testReserveWithValidParameters" />
         <item itemvalue="JUnit.ReservationServiceImplTest" />
+        <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoanNOK" />
+        <item itemvalue="JUnit.ReservationServiceImplTest.testStartReservation" />
         <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoanOK" />
-        <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoan" />
-        <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoan_notBorrowed" />
-        <item itemvalue="JUnit.ReservationServiceImplTest.testCheckReservationConditionByUserLoan_borrowed" />
       </list>
     </recent_temporary>
   </component>
@@ -467,14 +470,9 @@
       <workItem from="1676737311892" duration="358000" />
       <workItem from="1676916277375" duration="3419000" />
       <workItem from="1676996742712" duration="8145000" />
-      <workItem from="1677083023617" duration="2966000" />
-    </task>
-    <task id="LOCAL-00022" summary="modif employee, userAccount et suppression Member">
-      <created>1645029897062</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1645029897062</updated>
+      <workItem from="1677083023617" duration="4780000" />
+      <workItem from="1677166665423" duration="5599000" />
+      <workItem from="1677256753997" duration="7520000" />
     </task>
     <task id="LOCAL-00023" summary="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact">
       <created>1646550675183</created>
@@ -812,14 +810,20 @@
       <option name="project" value="LOCAL" />
       <updated>1675882201158</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="premiers tests fonctionnels">
+      <created>1677091298558</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1677091298558</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modification structure lending" />
     <MESSAGE value="Test modification et suppression livre" />
     <MESSAGE value="Ajout fonctions pour livre" />
     <MESSAGE value="Ajout fonctions pour afficher et prolonger prêts" />
@@ -844,7 +848,8 @@
     <MESSAGE value="reset BDD" />
     <MESSAGE value="Ajout date prochain retour et bouton pour annuiler réservation" />
     <MESSAGE value="Début Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Début Tests" />
+    <MESSAGE value="premiers tests fonctionnels" />
+    <option name="LAST_COMMIT_MESSAGE" value="premiers tests fonctionnels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -858,10 +863,13 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest_testCheckReservationConditionByUserLoanNOK.ic" NAME="ReservationServiceImplTest.testCheckReservationConditionByUserLoanNOK Coverage Results" MODIFIED="1677260308578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ocp10bibliotheque.bibliothequereservation.Services.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest_checkReservationConditionByUserLoanNOK.ic" NAME="ReservationServiceImplTest.checkReservationConditionByUserLoanNOK Coverage Results" MODIFIED="1675872026021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.ocp10bibliotheque.bibliothequereservation.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest.exec" NAME="ReservationServiceImplTest Coverage Results" MODIFIED="1677086776477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest.exec" NAME="ReservationServiceImplTest Coverage Results" MODIFIED="1677260334016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp10bibliotheque.bibliothequereservation.Services.*</FILTER>
     </SUITE>
   </component>
