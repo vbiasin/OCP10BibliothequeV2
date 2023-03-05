@@ -114,10 +114,11 @@ public class ReservationServiceImpl implements IReservationService{
     public Reservation reserve(String userAccountMail, int idBook) throws Exception {
         Optional<Book> book = bookRepository.findById(idBook);
         if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
+        Book book1 = book.get();
         Optional<UserAccount> userAccount = userAccountRepository.findByMail(userAccountMail);
         if(userAccount.isEmpty()) throw new Exception ("Cet utilisateur n'existe pas !");
         //vérifier si le nombre max de réservations pour cet ouvrage est atteint
-        if((book.get().getNumberExemplarTotal()*2)<=book.get().getCurrentNumberReservation()) throw new Exception("Le nombre maximum de réservations est atteint !");
+        if((book1.getNumberExemplarTotal()*2)<=book1.getCurrentNumberReservation()) throw new Exception("Le nombre maximum de réservations est atteint !");
         checkReservationConditionByUser(userAccount.get(),book.get());
         //Création de la réservation
         Reservation reservation = new Reservation(userAccount.get(),book.get(),book.get().getLibrary());
