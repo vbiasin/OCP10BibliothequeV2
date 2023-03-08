@@ -9,5 +9,6 @@ public interface ILendingService {
     public Lending extendLoan(int idLending) throws Exception;
     public List<Lending> displayLoan(String activeUserAccountMail) throws Exception;
     public void returnLoan(int idLending) throws Exception;
+    public void checkIsExtensible(Lending lending) throws Exception;
 
 }

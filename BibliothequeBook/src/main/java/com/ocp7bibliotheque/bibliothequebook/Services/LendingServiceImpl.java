@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,6 +43,13 @@ public class LendingServiceImpl implements ILendingService {
     }
 
     @Override
+    public void checkIsExtensible(Lending lending) throws Exception {
+        if(lending.getEndDate().isBefore(LocalDateTime.now())){ //si la date actuelle est supérieure
+            lending.setExtensible(false);
+        }
+    }
+
+    @Override
     public Lending extendLoan(int idLending) throws Exception {
         Optional<Lending> lending = lendingRepository.findById(idLending);
         if(lending.isEmpty()) throw new Exception ("Ce prêt n'existe pas !'");
@@ -52,13 +61,20 @@ public class LendingServiceImpl implements ILendingService {
 
     @Override
     public List<Lending> displayLoan(String mail) throws Exception {
+        List<Lending> listLendings = new ArrayList<>();
         Optional<UserAccount> userAccount = userAccountRepository.findByMail(mail);
         if (userAccount.isEmpty()) throw new Exception ("Cet utilisateur n'existe pas !");
-        for (Role role:userAccount.get().getRoles()
-             ) {
-            if (role.getName().equals("ADMIN") || role.getName().equals("EMPLOYEE")) return lendingRepository.findAll();
+        for (Role role:userAccount.get().getRoles()) {
+            if (role.getName().equals("ADMIN") || role.getName().equals("EMPLOYEE")){
+                listLendings =  lendingRepository.findAll();}
+            else {
+                listLendings = lendingRepository.findByUserAccount(userAccount.get());
+            }
         }
-        return lendingRepository.findByUserAccount(userAccount.get());
+        for (Lending lending:listLendings) {
+            checkIsExtensible(lending);
+        }
+        return listLendings ;
     }
 
     @Override
