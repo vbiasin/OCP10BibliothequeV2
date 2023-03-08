@@ -343,7 +343,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeBatchMailApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeSpringCloudConfigApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="OCP7BibliothequeWeb" />
       <method v="2">
