@@ -43,13 +43,6 @@ public class LendingServiceImpl implements ILendingService {
     }
 
     @Override
-    public void checkIsExtensible(Lending lending) throws Exception {
-        if(lending.getEndDate().isBefore(LocalDateTime.now())){ //si la date actuelle est supérieure
-            lending.setExtensible(false);
-        }
-    }
-
-    @Override
     public Lending extendLoan(int idLending) throws Exception {
         Optional<Lending> lending = lendingRepository.findById(idLending);
         if(lending.isEmpty()) throw new Exception ("Ce prêt n'existe pas !'");
@@ -57,6 +50,13 @@ public class LendingServiceImpl implements ILendingService {
         lending.get().setExtensible(false);
         lending.get().setStatus("Prolongé");
         return lendingRepository.saveAndFlush(lending.get());
+    }
+
+    @Override
+    public void checkIsExtensible(Lending lending) throws Exception {
+        if(lending.getEndDate().isBefore(LocalDateTime.now())){ //si la date actuelle est supérieure
+            lending.setExtensible(false);
+        }
     }
 
     @Override
@@ -76,6 +76,17 @@ public class LendingServiceImpl implements ILendingService {
         }
         return listLendings ;
     }
+
+ /*   @Override
+    public List<Lending> displayLoan(String mail) throws Exception {
+        Optional<UserAccount> userAccount = userAccountRepository.findByMail(mail);
+        if (userAccount.isEmpty()) throw new Exception ("Cet utilisateur n'existe pas !");
+        for (Role role:userAccount.get().getRoles()
+        ) {
+            if (role.getName().equals("ADMIN") || role.getName().equals("EMPLOYEE")) return lendingRepository.findAll();
+        }
+        return lendingRepository.findByUserAccount(userAccount.get());
+    }*/
 
     @Override
     public void returnLoan(int idLending) throws Exception {
