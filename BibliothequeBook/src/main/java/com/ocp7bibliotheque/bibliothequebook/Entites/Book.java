@@ -2,7 +2,6 @@ package com.ocp7bibliotheque.bibliothequebook.Entites;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Date;
 
@@ -15,33 +14,28 @@ public class Book implements Serializable {
     private Library library;
     private Boolean isAvailable;
     private Date publicationDate;
-    private LocalDateTime nextReturn;
     private String resume;
     private String title;
     private String author;
-    private int numberExemplarTotal;
-    private int numberExemplarActual;
-    private int currentNumberReservation;
-    private int numberMaxReservation;
+    private int numberExemplar;
     @ManyToOne (fetch=FetchType.LAZY)
     private Lending lending;
-    @ManyToOne (fetch=FetchType.LAZY)
-    private Reservation reservation;
-
 
     public Book() {
     }
 
-    public Book(Date publicationDate, String resume, String title, String author, int numberExemplarTotal) {
+    public Book(Date publicationDate, String resume, String title, String author, int numberExemplar) {
         this.isAvailable = true;
         this.publicationDate = publicationDate;
         this.resume = resume;
         this.title = title;
         this.author = author;
-        this.numberExemplarTotal = numberExemplarTotal;
-        this.numberExemplarActual= numberExemplarTotal;
-        this.currentNumberReservation=0;
-        this.numberMaxReservation=2*numberExemplarTotal;
+        this.numberExemplar = numberExemplar;
+    }
+
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
     }
 
     public int getId() {
@@ -108,51 +102,13 @@ public class Book implements Serializable {
         this.author = author;
     }
 
-    public Reservation getReservation() {
-        return reservation;
+    public int getNumberExemplar() {
+        return numberExemplar;
     }
 
-    public void setReservation(Reservation reservation) {
-        this.reservation = reservation;
+    public void setNumberExemplar(int numberExemplar) {
+        this.numberExemplar = numberExemplar;
     }
 
-    public int getNumberExemplarTotal() {
-        return numberExemplarTotal;
-    }
 
-    public void setNumberExemplarTotal(int numberExemplarTotal) {
-        this.numberExemplarTotal = numberExemplarTotal;
-    }
-
-    public int getNumberExemplarActual() {
-        return numberExemplarActual;
-    }
-
-    public void setNumberExemplarActual(int numberExemplarActual) {
-        this.numberExemplarActual = numberExemplarActual;
-    }
-
-    public int getCurrentNumberReservation() {
-        return currentNumberReservation;
-    }
-
-    public void setCurrentNumberReservation(int currentNumberReservation) {
-        this.currentNumberReservation = currentNumberReservation;
-    }
-
-    public int getNumberMaxReservation() {
-        return numberMaxReservation;
-    }
-
-    public void setNumberMaxReservation(int numberMaxReservation) {
-        this.numberMaxReservation = numberMaxReservation;
-    }
-
-    public LocalDateTime getNextReturn() {
-        return nextReturn;
-    }
-
-    public void setNextReturn(LocalDateTime nextReturn) {
-        this.nextReturn = nextReturn;
-    }
 }

@@ -22,6 +22,11 @@ public class RoleServiceImpl implements IRoleService{
     @Autowired
     RoleRepository roleRepository;
 
+    public RoleServiceImpl(UserAccountRepository userAccountRepository, RoleRepository roleRepository) {
+        this.userRepository=userAccountRepository;
+        this.roleRepository=roleRepository;
+    }
+
     @Override
     public void addRoleToUserAccount(String mail, int idRole) throws Exception {
         Optional<UserAccount> userAccount = userRepository.findByMail(mail);
@@ -55,4 +60,5 @@ public class RoleServiceImpl implements IRoleService{
         userAccount.get().setRoles(roles);
         userRepository.saveAndFlush(userAccount.get());
     }
+
 }
