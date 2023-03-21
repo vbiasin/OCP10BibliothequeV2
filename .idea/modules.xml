@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/BibliothequeEureka/BibliothequeEureka.iml" filepath="$PROJECT_DIR$/BibliothequeEureka/BibliothequeEureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/BibliothequeSpringCloudConfig/BibliothequeSpringCloudConfig.iml" filepath="$PROJECT_DIR$/BibliothequeSpringCloudConfig/BibliothequeSpringCloudConfig.iml" />
       <module fileurl="file://$PROJECT_DIR$/BibliothequeWeb/BibliothequeWeb.iml" filepath="$PROJECT_DIR$/BibliothequeWeb/BibliothequeWeb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OCP7BibliothequeWeb/OCP7BibliothequeWeb.iml" filepath="$PROJECT_DIR$/OCP7BibliothequeWeb/OCP7BibliothequeWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server-repo/config-server-repo.iml" filepath="$PROJECT_DIR$/config-server-repo/config-server-repo.iml" />
     </modules>
   </component>

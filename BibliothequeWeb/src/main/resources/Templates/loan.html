@@ -26,7 +26,7 @@
                             <td th:text= "${loan.book.library.address}"></td>
                             <td th:text= "${loan.status}"></td>
                             <td >
-                               <form   th:if="${loan.status=='en cours'}" th:action="@{/extendLoan(idLending=${loan.id})}" method="post"><button type="submit"  >Prolonger</button></form>
+                               <form   th:if="${loan.isExtensible== true}" th:action="@{/extendLoan(idLending=${loan.id})}" method="post"><button type="submit"  >Prolonger</button></form>
                             </td>
                             <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${loan.userAccount.contact.lastName}"></td>
                             <td  sec:authorize="hasAuthority('EMPLOYEE')" th:text= "${loan.userAccount.contact.firstName}"></td>

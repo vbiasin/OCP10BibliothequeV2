@@ -33,6 +33,11 @@ public class Book implements Serializable {
         this.numberExemplar = numberExemplar;
     }
 
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
     public int getId() {
         return id;
     }
@@ -104,4 +109,6 @@ public class Book implements Serializable {
     public void setNumberExemplar(int numberExemplar) {
         this.numberExemplar = numberExemplar;
     }
+
+
 }
