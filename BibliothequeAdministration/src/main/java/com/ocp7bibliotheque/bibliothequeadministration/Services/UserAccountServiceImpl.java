@@ -8,12 +8,7 @@ import com.ocp7bibliotheque.bibliothequeadministration.Entites.Contact;
 import com.ocp7bibliotheque.bibliothequeadministration.Entites.Lending;
 import com.ocp7bibliotheque.bibliothequeadministration.Entites.Role;
 import com.ocp7bibliotheque.bibliothequeadministration.Entites.UserAccount;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -96,21 +91,26 @@ public class UserAccountServiceImpl implements IUserAccountService{
     }
 
     @Override
+    public List<Contact> getListWithNoDoublon(List<Contact> contacts) throws Exception {
+        List<Contact> noDoublonContacts = new ArrayList<>();
+        if(!contacts.isEmpty()){
+            for( Contact contact: contacts ){
+                if(noDoublonContacts.isEmpty()) noDoublonContacts.add(contact);
+                boolean noDoublon = true;
+                for (Contact noDoublonContact:noDoublonContacts) {
+                    if (contact.getLastName().equals(noDoublonContact.getLastName()) && contact.getFirstName().equals(noDoublonContact.getFirstName())){noDoublon=false;
+                    }
+                }
+                if (noDoublon==true) noDoublonContacts.add(contact);
+            }
+        }
+        return noDoublonContacts;
+    }
+
+    @Override
     public List<UserAccount> searchUserAccount(String mail, String lastName, String firstName) throws Exception {
-       List<Contact> contacts = contactRepository.findByLastNameOrFirstName(lastName, firstName);
-       List<Contact> noDoublonContacts = new ArrayList<>();
-       if(!contacts.isEmpty()){
-           for( Contact contact: contacts ){
-               if(noDoublonContacts.isEmpty()) noDoublonContacts.add(contact);
-               boolean doublon = true;
-               for (Contact noDoublonContact:noDoublonContacts) {
-                   if (!contact.getFirstName().equals(noDoublonContact.getFirstName()) || !contact.getLastName().equals(noDoublonContact.getLastName())){
-                       doublon=false;
-                   }
-               }
-               if (!doublon) noDoublonContacts.add(contact);
-           }
-       }
+
+        List<Contact> noDoublonContacts = getListWithNoDoublon(contactRepository.findByLastNameOrFirstName(lastName, firstName));
 
         List<UserAccount> result = new ArrayList<>();
         List<UserAccount> resultWithContact = new ArrayList<>();
@@ -127,7 +127,7 @@ public class UserAccountServiceImpl implements IUserAccountService{
                     resultWithContact.add(userAccount);
                 }
             }
-            result=resultWithContact;
+            return resultWithContact;
        }
        else{
 
