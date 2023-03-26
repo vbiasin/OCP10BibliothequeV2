@@ -10,8 +10,10 @@
         <module name="BibliothequeSpringCloudConfig" />
         <module name="BibliothequeBatchMail" />
         <module name="BibliothequeWeb" />
+        <module name="BibliothequeReservation" />
         <module name="BibliothequeAdministration" />
         <module name="BibliothequeBook" />
+
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,7 +34,6 @@
       <module name="BibliothequeAdministration (1)" options="-parameters" />
       <module name="BibliothequeAdministration (2)" options="-parameters" />
       <module name="BibliothequeBatchMail" options="-parameters" />
-      <module name="BibliothequeBook" options="-parameters" />
       <module name="BibliothequeConfigServer" options="-parameters" />
       <module name="BibliothequeEureka" options="-parameters" />
       <module name="BibliothequeGateway" options="-parameters" />

@@ -5,6 +5,9 @@ public class LendingDTO {
     private String mail;
     private int idBook;
 
+    public LendingDTO() {
+    }
+
     public LendingDTO(String mail, int idBook) {
         this.mail = mail;
         this.idBook = idBook;
@@ -26,3 +29,4 @@ public class LendingDTO {
         this.idBook = idBook;
     }
 }
+

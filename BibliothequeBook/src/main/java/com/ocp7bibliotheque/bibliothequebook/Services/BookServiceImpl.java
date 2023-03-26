@@ -14,7 +14,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -47,17 +49,18 @@ public class BookServiceImpl implements IBookService {
     public Book addBook(int idLibrary, Book book) throws Exception {
         Optional<Library> library = libraryRepository.findById(idLibrary);
         if (library.isEmpty()) throw new Exception ("Cette Bibliotheque n'existe pas.");
-        if (book.getNumberExemplar()<=0) throw new Exception("Le nombre d'exemplaires ne peut être nul ou négatif !");
+        if (book.getNumberExemplarTotal()<=0) throw new Exception("Le nombre d'exemplaires ne peut être nul ou négatif !");
         book.setLibrary(library.get());
         return bookRepository.save(book);
     }
 
     @Override
-    public Book modifyBook(int idBook, int numberExemplar) throws Exception {
+    public Book modifyBook(int idBook, int numberExemplarTotal) throws Exception {
         Optional<Book> book = bookRepository.findById(idBook);
         if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
-        if(numberExemplar<=0) throw new Exception("Le nombre d'exemplaires ne peut être nul ou négatif !");
-        book.get().setNumberExemplar(numberExemplar);
+        if(numberExemplarTotal<=0) throw new Exception("Le nombre d'exemplaires ne peut être nul ou négatif !");
+        book.get().setNumberExemplarTotal(numberExemplarTotal);
+        book.get().setNumberMaxReservation(2*numberExemplarTotal);
         return bookRepository.saveAndFlush(book.get());
     }
 

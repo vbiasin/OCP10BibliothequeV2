@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class BookDTO implements Serializable {
 
     private int idLibrary;
-    private int numberExemplar;
+    private int numberExemplar; // selon le cas Total ou Actual
     private int idBook;
     private String author;
     private String title;
@@ -47,13 +47,7 @@ public class BookDTO implements Serializable {
         this.book = book;
     }
 
-    public int getNumberExemplar() {
-        return numberExemplar;
-    }
 
-    public void setNumberExemplar(int numberExemplar) {
-        this.numberExemplar = numberExemplar;
-    }
 
     public int getIdBook() {
         return idBook;
@@ -78,5 +72,14 @@ public class BookDTO implements Serializable {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public int getNumberExemplar() {
+        return numberExemplar;
+    }
+
+    public void setNumberExemplarActual(int numberExemplar) {
+        this.numberExemplar = numberExemplar;
+    }
 }
+
 

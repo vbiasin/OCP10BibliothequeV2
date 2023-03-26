@@ -36,8 +36,8 @@ public class LendingServiceImpl implements ILendingService {
         Optional<UserAccount> userAccount = userAccountRepository.findByMail(userAccountMail);
         if(userAccount.isEmpty()) throw new Exception ("Cet utilisateur n'existe pas !");
         Lending lending = new Lending(userAccount.get(),book.get());
-        book.get().setNumberExemplar(book.get().getNumberExemplar()-1);
-        if (book.get().getNumberExemplar()==0) book.get().setAvailable(false);
+        book.get().setNumberExemplarActual(book.get().getNumberExemplarActual()-1);
+        if (book.get().getNumberExemplarActual()==0) book.get().setAvailable(false);
         bookRepository.saveAndFlush(book.get());
         return lendingRepository.save(lending);
     }
@@ -94,7 +94,10 @@ public class LendingServiceImpl implements ILendingService {
         if(lending.isEmpty()) throw new Exception ("Ce prêt n'existe pas !'");
         Optional<Book> book = bookRepository.findById(lending.get().getBook().getId());
         if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
-        book.get().setNumberExemplar(book.get().getNumberExemplar()+1);
+        book.get().setNumberExemplarActual(book.get().getNumberExemplarActual()+1);
+        if(book.get().getCurrentNumberReservation()==0 && book.get().getAvailable()==false){
+            book.get().setAvailable(true);
+        }
         bookRepository.saveAndFlush(book.get());
         lending.get().setStatus("Terminé");
         lendingRepository.saveAndFlush(lending.get());
