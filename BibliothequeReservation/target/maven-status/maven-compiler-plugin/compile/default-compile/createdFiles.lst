@@ -1,0 +1,9 @@
+com\ocp10bibliotheque\bibliothequereservation\Entites\Employee.class
+com\ocp10bibliotheque\bibliothequereservation\Entites\Reservation.class
+com\ocp10bibliotheque\bibliothequereservation\Entites\UserAccount.class
+com\ocp10bibliotheque\bibliothequereservation\Entites\Book.class
+com\ocp10bibliotheque\bibliothequereservation\BibliothequeReservationApplication.class
+com\ocp10bibliotheque\bibliothequereservation\Entites\Library.class
+com\ocp10bibliotheque\bibliothequereservation\Entites\Contact.class
+com\ocp10bibliotheque\bibliothequereservation\Entites\Lending.class
+com\ocp10bibliotheque\bibliothequereservation\Entites\Role.class

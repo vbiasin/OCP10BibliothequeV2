@@ -37,7 +37,7 @@ public class UserAccountServiceImpl implements IUserAccountService{
     public UserAccount register(UserAccount account) throws Exception {
         Optional<Role> defaultRole = roleRepository.findByName("USER");
         if(defaultRole.isEmpty()) throw new Exception("Erreur lors de l'affectation du Role USER");
-        /*Optional<Role> employeeRole = roleRepository.findByName("EMPLOYEE");
+       /* Optional<Role> employeeRole = roleRepository.findByName("EMPLOYEE");
         if(employeeRole.isEmpty()) throw new Exception("Erreur lors de l'affectation du Role EMPLOYEE");
         Optional<Role> adminRole = roleRepository.findByName("ADMIN");
         if(adminRole.isEmpty()) throw new Exception("Erreur lors de l'affectation du Role ADMIN");*/

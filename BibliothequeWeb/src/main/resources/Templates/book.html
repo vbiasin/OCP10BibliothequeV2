@@ -30,7 +30,7 @@
                         </div>
                         <div>
                             <label>Nombre d'exemplaires:</label>
-                            <input type="number"  step="any" name="numberExemplar" />
+                            <input type="number"  step="any" name="numberExemplarTotal" />
                         </div>
                         <div>
                             <label>ID Bibliothèque:</label>
@@ -73,22 +73,24 @@
                     <h3 class="card-title">Liste Livres</h3>
                     <table class="table table-striped">
                         <tr>
-                            <th>ID</th><th>Titre</th><th>Auteur</th><th>Résumé</th><th>Quantité Disponnible</th><th>Bibliotheque</th><th>Adresse</th><th>Emprunter</th><th sec:authorize="hasAuthority('EMPLOYEE')">Modifier</th><th sec:authorize="hasAuthority('EMPLOYEE')">Supprimer</th>
+                            <th>ID</th><th>Titre</th><th>Auteur</th><th>Résumé</th><th>Quantité Disponnible</th><th>Bibliotheque</th><th>Adresse</th><th>Nombre de réservations</th><th>Emprunter</th><th>Réserver</th><th sec:authorize="hasAuthority('EMPLOYEE')">Modifier</th><th sec:authorize="hasAuthority('EMPLOYEE')">Supprimer</th>
                         </tr>
                         <tr th:each="book:${pageListBooks}">
                             <td th:text= "${book.id}"></td>
                             <td th:text= "${book.title}"></td>
                             <td th:text= "${book.author}"></td>
                             <td th:text= "${book.resume}"></td>
-                            <td th:text= "${book.numberExemplar}"></td>
+                            <td th:text= "${book.numberExemplarActual}"></td>
                             <td th:text= "${book.library.name}"></td>
                             <td th:text= "${book.library.address}"></td>
+                            <td th:text= "${book.currentNumberReservation}"></td>
                             <td  ><form th:if="${book.getAvailable}" th:action="@{/borrow(idBook=${book.id})}" method="post"><button type="submit"  >Emprunter</button></form></td>
+                            <td  ><form th:if="!${book.getAvailable} and (${book.currentNumberReservation} < ${book.numberMaxReservation})" th:action="@{/reserve(idBook=${book.id})}" method="post"><button type="submit"  >Réserver</button></form></td>
                             <td  sec:authorize="hasAuthority('EMPLOYEE')">
                                 <form th:action="@{/modifyBook(idBook=${book.id})}" method="post">
                                     <div>
                                         <label>Nombre d'exemplaires:</label>
-                                        <input type="number"  step="any" name="numberExemplar" />
+                                        <input type="number"  step="any" name="numberExemplarTotal" />
                                     </div>
                                     <button type="submit"  >Modifier</button>
                                 </form>

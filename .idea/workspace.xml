@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Mise en place des tests unitaires pour les modules BibliothequeWeb et BibliothqueBook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/IUserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/IUserAccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/test/java/com/ocp7bibliotheque/bibliothequeadministration/UserAccountServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/test/java/com/ocp7bibliotheque/bibliothequeadministration/UserAccountServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,12 @@
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="D:\Projets\JAVA\Projet10\Repports\BibliothequeAdministration" />
+     </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="D:\Projets\JAVA\Projet10\Repports\BibliothequeReservation" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,6 +34,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -33,8 +44,40 @@
         <entry key="$PROJECT_DIR$" value="ticket2" />
       </map>
     </option>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="github/ticket1" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -45,6 +88,29 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6f80b7c1-cbf1-4016-ab29-4f566e301342" />
+        <option name="url" value="https://github.com/vbiasin/OCP7Bibliotheque.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="20NTdNrZ0aCYF1yYrKzRGqvdx26" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,31 +135,67 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;15&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet10/Repports/BibliothequeReservation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;336bc28601f98635d709b26ba20d7703&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ocp10bibliotheque.bibliothequereservation.Controller" />
       <recent name="com.ocp7bibliotheque.bibliothequeweb.DTO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\config-server-repo" />
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeBatchMail\src\main\java\com\ocp7bibliotheque\bibliothequebatchmail\Entites" />
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeBatchMail\src\main\java\com\ocp7bibliotheque\bibliothequebatchmail" />
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeWeb\src\main\resources\Templates" />
-      <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeAdministration\src\main\java\com\ocp7bibliotheque\bibliothequeadministration" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation\src\main\java\com\ocp10bibliotheque\bibliothequereservation" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation\src\main\resources" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeWeb\src\main\resources\Templates" />
+      <recent name="D:\Projets\JAVA\Projet10\OCP10BibliothequeV2\BibliothequeReservation\src\main\java\com\ocp10bibliotheque\bibliothequereservation\Services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeWeb\src\main\resources\static" />
       <recent name="C:\Projets\JAVA\Projet7\OCP7Bibliotheque\BibliothequeWeb\src\main\resources\static\css" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ocp10bibliotheque.bibliothequereservation" />
+      <recent name="com.ocp10bibliotheque.bibliothequereservation.DTO" />
       <recent name="com.ocp7bibliotheque.bibliothequeweb" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ocp10bibliotheque.bibliothequereservation.Services" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ocp7bibliotheque.bibliothequeadministration.DAO" />
-      <recent name="com.ocp7bibliotheque.bibliothequeadministration.Entites" />
-      <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
+      <recent name="com.ocp7bibliotheque.bibliothequeweb.DTO" />
+      <recent name="com.ocp7bibliotheque.bibliothequebook.DTO" />
+      <recent name="com.ocp7bibliotheque.bibliothequeadministration.DTO" />
+      <recent name="com.ocp7bibliotheque.bibliothequebatchmail.DAO" />
+      <recent name="com.ocp10bibliotheque.bibliothequereservation.DAO" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UserAccountServiceImplTest">
@@ -107,6 +209,17 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.LibraryServiceImplTest" />
+  <component name="RunManager" selected="JUnit.ReservationServiceImplTest">
+    <configuration name="ReservationServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -125,6 +238,18 @@
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.RoleServiceImplTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+    <configuration name="ReservationServiceImplTest.testCancelReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="testCancelReservation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,6 +266,18 @@
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+    <configuration name="ReservationServiceImplTest.testDisplayReservationByUserWithUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="testDisplayReservationByUserWithUserRole" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,6 +293,17 @@
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
       <option name="METHOD_NAME" value="testIsValidWithCorrectCredentials" />
+    <configuration name="ReservationServiceImplTest.testValidateReservation_withValidReservationAndNextReservation_shouldReserveNextReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="testValidateReservation_withValidReservationAndNextReservation_shouldReserveNextReservation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,6 +320,17 @@
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
       <option name="METHOD_NAME" value="testSearchUserAccountWithNoMatchesAndNoMail" />
+    <configuration name="ReservationServiceImplTest.testValidateReservation_withValidReservation_shouldUpdateReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="testValidateReservation_withValidReservation_shouldUpdateReservation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,7 +366,10 @@
     </configuration>
     <configuration name="BibliothequeBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BibliothequeBook" />
+
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+
+
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequebook.BibliothequeBookApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,6 +379,16 @@
       <module name="BibliothequeEureka" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp7bibliotheque.bibliothequeeureka.BibliothequeEurekaApplication" />
+
+
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BibliothequeReservationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp10bibliotheque.bibliothequereservation.BibliothequeReservationApplication" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,11 +411,20 @@
       </method>
     </configuration>
     <list>
+
       <item itemvalue="JUnit.LibraryServiceImplTest" />
       <item itemvalue="JUnit.RoleServiceImplTest" />
       <item itemvalue="JUnit.UserAccountServiceImplTest.testSearchUserAccountWithNoMatchesAndNoMail" />
       <item itemvalue="JUnit.UserAccountServiceImplTest.testIsValidWithCorrectCredentials" />
       <item itemvalue="JUnit.UserAccountServiceImplTest" />
+
+      <item itemvalue="JUnit.ReservationServiceImplTest.testValidateReservation_withValidReservationAndNextReservation_shouldReserveNextReservation" />
+      <item itemvalue="JUnit.ReservationServiceImplTest.testValidateReservation_withValidReservation_shouldUpdateReservation" />
+      <item itemvalue="JUnit.ReservationServiceImplTest.testCancelReservation" />
+      <item itemvalue="JUnit.ReservationServiceImplTest.testDisplayReservationByUserWithUserRole" />
+      <item itemvalue="JUnit.ReservationServiceImplTest" />
+      <item itemvalue="Spring Boot.BibliothequeReservationApplication" />
+
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
       <item itemvalue="Spring Boot.BibliothequeWebApplication" />
@@ -253,11 +434,19 @@
     </list>
     <recent_temporary>
       <list>
+
         <item itemvalue="JUnit.UserAccountServiceImplTest" />
         <item itemvalue="JUnit.LibraryServiceImplTest" />
         <item itemvalue="JUnit.RoleServiceImplTest" />
         <item itemvalue="JUnit.UserAccountServiceImplTest.testIsValidWithCorrectCredentials" />
         <item itemvalue="JUnit.UserAccountServiceImplTest.testSearchUserAccountWithNoMatchesAndNoMail" />
+
+        <item itemvalue="JUnit.ReservationServiceImplTest" />
+        <item itemvalue="JUnit.ReservationServiceImplTest.testCancelReservation" />
+        <item itemvalue="JUnit.ReservationServiceImplTest.testValidateReservation_withValidReservationAndNextReservation_shouldReserveNextReservation" />
+        <item itemvalue="JUnit.ReservationServiceImplTest.testDisplayReservationByUserWithUserRole" />
+        <item itemvalue="JUnit.ReservationServiceImplTest.testValidateReservation_withValidReservation_shouldUpdateReservation" />
+
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +551,7 @@
       <workItem from="1655538001876" duration="91000" />
       <workItem from="1655652024232" duration="430000" />
       <workItem from="1655910792599" duration="347000" />
-      <workItem from="1678296875584" duration="3210000" />
+   <workItem from="1678296875584" duration="3210000" />
       <workItem from="1678637126766" duration="830000" />
       <workItem from="1678637974220" duration="1010000" />
       <workItem from="1678904607081" duration="4610000" />
@@ -469,6 +658,52 @@
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
       <updated>1646550675183</updated>
+      <workItem from="1671642896676" duration="2100000" />
+      <workItem from="1671726767380" duration="4057000" />
+      <workItem from="1671864530738" duration="7000" />
+      <workItem from="1673031680178" duration="3105000" />
+      <workItem from="1673081857982" duration="1629000" />
+      <workItem from="1673083861583" duration="1161000" />
+      <workItem from="1673166637338" duration="610000" />
+      <workItem from="1673457664634" duration="8525000" />
+      <workItem from="1673544463530" duration="4714000" />
+      <workItem from="1673688815019" duration="1256000" />
+      <workItem from="1673758931490" duration="1229000" />
+      <workItem from="1673762438516" duration="2938000" />
+      <workItem from="1673815532710" duration="691000" />
+      <workItem from="1673887320117" duration="6422000" />
+      <workItem from="1673972721516" duration="1017000" />
+      <workItem from="1673975839155" duration="419000" />
+      <workItem from="1674018215186" duration="4594000" />
+      <workItem from="1674058849079" duration="8552000" />
+      <workItem from="1674144697125" duration="608000" />
+      <workItem from="1674145994335" duration="9071000" />
+      <workItem from="1674228290989" duration="11000" />
+      <workItem from="1674397744473" duration="614000" />
+      <workItem from="1674498324756" duration="3071000" />
+      <workItem from="1674661841241" duration="10693000" />
+      <workItem from="1675616559037" duration="10690000" />
+      <workItem from="1675861408689" duration="7726000" />
+      <workItem from="1675869481066" duration="7717000" />
+      <workItem from="1676046704438" duration="2329000" />
+      <workItem from="1676737311892" duration="358000" />
+      <workItem from="1676916277375" duration="3419000" />
+      <workItem from="1676996742712" duration="8145000" />
+      <workItem from="1677083023617" duration="4780000" />
+      <workItem from="1677166665423" duration="5599000" />
+      <workItem from="1677256753997" duration="7689000" />
+      <workItem from="1677331508321" duration="1264000" />
+      <workItem from="1677398276226" duration="13000" />
+      <workItem from="1677420780076" duration="6248000" />
+      <workItem from="1677515533941" duration="705000" />
+      <workItem from="1677602940664" duration="6350000" />
+      <workItem from="1677688017504" duration="560000" />
+      <workItem from="1677688587423" duration="402000" />
+      <workItem from="1677688991841" duration="19000" />
+      <workItem from="1677689020681" duration="1785000" />
+      <workItem from="1677775012558" duration="4472000" />
+      <workItem from="1677858897678" duration="889000" />
+      <workItem from="1677999303739" duration="2546000" />
     </task>
     <task id="LOCAL-00024" summary="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact">
       <created>1646550959740</created>
@@ -673,6 +908,7 @@
       <option name="project" value="LOCAL" />
       <updated>1654710760424</updated>
     </task>
+
     <task id="LOCAL-00053" summary="correction extension prêt si date de fin du prêt est dépassé.">
       <created>1678295626508</created>
       <option name="number" value="00053" />
@@ -716,12 +952,156 @@
       <updated>1679415622108</updated>
     </task>
     <option name="localTasksCounter" value="59" />
+
+    <task id="LOCAL-00053" summary="ajout module réservation + modification entite Book">
+      <created>1673084407844</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1673084407845</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation">
+      <created>1673461729603</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1673461729603</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation">
+      <created>1673461776984</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1673461776984</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation">
+      <created>1673462601222</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1673462601222</updated>
+    </task>
+    <task id="LOCAL-00057" summary="utilisation ipv4 192.168.1.62">
+      <created>1673464026419</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1673464026419</updated>
+    </task>
+    <task id="LOCAL-00058" summary="bibliothequeweb.properties change status db create to update">
+      <created>1673464282476</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1673464282476</updated>
+    </task>
+    <task id="LOCAL-00059" summary="link db for module book">
+      <created>1673465826843</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1673465826843</updated>
+    </task>
+    <task id="LOCAL-00060" summary="link db for module book">
+      <created>1673465877998</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1673465877998</updated>
+    </task>
+    <task id="LOCAL-00061" summary="modifs entité Reservation">
+      <created>1673689170324</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1673689170324</updated>
+    </task>
+    <task id="LOCAL-00062" summary="modifs entité Reservation + ajout repository">
+      <created>1673815623329</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1673815623330</updated>
+    </task>
+    <task id="LOCAL-00063" summary="modifs timezone + premiers tests sur l'appli">
+      <created>1674158641083</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1674158641083</updated>
+    </task>
+    <task id="LOCAL-00064" summary="modifs timezone">
+      <created>1674158989528</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1674158989528</updated>
+    </task>
+    <task id="LOCAL-00065" summary="modifs Book + LendingDTO">
+      <created>1674159832042</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1674159832042</updated>
+    </task>
+    <task id="LOCAL-00066" summary="ajouter le bouton pour annuler la réservation, la date du prochain retour et les tests unitaires pour le 01/02/2023">
+      <created>1674672501060</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1674672501060</updated>
+    </task>
+    <task id="LOCAL-00067" summary="ajouter le bouton pour annuler la réservation, la date du prochain retour et les tests unitaires pour le 01/02/2023">
+      <created>1675625374294</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1675625374294</updated>
+    </task>
+    <task id="LOCAL-00068" summary="reset BDD">
+      <created>1675625893634</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1675625893634</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Ajout date prochain retour et bouton pour annuiler réservation">
+      <created>1675627212106</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1675627212106</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Début Tests">
+      <created>1675882201158</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1675882201158</updated>
+    </task>
+    <task id="LOCAL-00071" summary="premiers tests fonctionnels">
+      <created>1677091298558</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1677091298558</updated>
+    </task>
+    <task id="LOCAL-00072" summary="suite tests ReservationServiceImpl">
+      <created>1677264702208</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1677264702208</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+
     <MESSAGE value="modif lending" />
     <MESSAGE value="modif employee, userAccount et suppression Member" />
     <MESSAGE value="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact" />
@@ -736,6 +1116,7 @@
     <MESSAGE value="Ajout Proxies" />
     <MESSAGE value="Modification structure lending" />
     <MESSAGE value="Test modification et suppression livre" />
+
     <MESSAGE value="Ajout fonctions pour livre" />
     <MESSAGE value="Ajout fonctions pour afficher et prolonger prêts" />
     <MESSAGE value="modifs pour les suppressions" />
@@ -745,9 +1126,29 @@
     <MESSAGE value="uniformisation version Java (Java 15)" />
     <MESSAGE value="modifications du retour des fonctions de recherches" />
     <MESSAGE value="implémentation de la fonction permettant de retourner un prêt" />
+
     <MESSAGE value="correction extension prêt si date de fin du prêt est dépassé." />
     <MESSAGE value="Mise en place des tests unitaires pour les modules BibliothequeWeb et BibliothqueBook" />
     <option name="LAST_COMMIT_MESSAGE" value="Mise en place des tests unitaires pour les modules BibliothequeWeb et BibliothqueBook" />
+
+    <MESSAGE value="ajout module réservation + modification entite Book" />
+    <MESSAGE value="Modification BookDTO dans les services et controller du module book&#10;Ajout DTO, DAO et Controller dans module Reservation" />
+    <MESSAGE value="utilisation ipv4 192.168.1.62" />
+    <MESSAGE value="bibliothequeweb.properties change status db create to update" />
+    <MESSAGE value="link db for module book" />
+    <MESSAGE value="modifs entité Reservation" />
+    <MESSAGE value="modifs entité Reservation + ajout repository" />
+    <MESSAGE value="modifs timezone + premiers tests sur l'appli" />
+    <MESSAGE value="modifs timezone" />
+    <MESSAGE value="modifs Book + LendingDTO" />
+    <MESSAGE value="ajouter le bouton pour annuler la réservation, la date du prochain retour et les tests unitaires pour le 01/02/2023" />
+    <MESSAGE value="reset BDD" />
+    <MESSAGE value="Ajout date prochain retour et bouton pour annuiler réservation" />
+    <MESSAGE value="Début Tests" />
+    <MESSAGE value="premiers tests fonctionnels" />
+    <MESSAGE value="suite tests ReservationServiceImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="suite tests ReservationServiceImpl" />
+
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,6 +1158,7 @@
           <line>27</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Service/MailAlert.java</url>
           <line>55</line>
@@ -782,6 +1184,7 @@
           <line>327</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -815,6 +1218,17 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$UserAccountServiceImplTest.exec" NAME="UserAccountServiceImplTest Coverage Results" MODIFIED="1679512499203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp7bibliotheque.bibliothequeadministration.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest_testCheckReservationConditionByUserLoanNOK.ic" NAME="ReservationServiceImplTest.testCheckReservationConditionByUserLoanNOK Coverage Results" MODIFIED="1677260308578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ocp10bibliotheque.bibliothequereservation.Services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest_checkReservationConditionByUserLoanNOK.ic" NAME="ReservationServiceImplTest.checkReservationConditionByUserLoanNOK Coverage Results" MODIFIED="1675872026021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ocp10bibliotheque.bibliothequereservation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest.exec" NAME="ReservationServiceImplTest Coverage Results" MODIFIED="1678001792862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.ocp10bibliotheque.bibliothequereservation.Services.*</FILTER>
     </SUITE>
   </component>
 </project>

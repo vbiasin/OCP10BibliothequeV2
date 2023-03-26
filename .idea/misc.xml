@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
@@ -11,9 +12,9 @@
         <option value="$PROJECT_DIR$/BibliothequeEureka/pom.xml" />
         <option value="$PROJECT_DIR$/BibliothequeSpringCloudConfig/pom.xml" />
         <option value="$PROJECT_DIR$/OCP7BibliothequeWeb/pom.xml" />
-        <option value="$PROJECT_DIR$/BibliothequeBook/pom.xml" />
         <option value="$PROJECT_DIR$/BibliothequeAdministration/pom.xml" />
         <option value="$PROJECT_DIR$/BibliothequeBatchMail/pom.xml" />
+        <option value="$PROJECT_DIR$/BibliothequeReservation/pom.xml" />
       </list>
     </option>
   </component>
