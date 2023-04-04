@@ -14,7 +14,6 @@
           <element id="module-output" name="BibliothequeReservation" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.12.22" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.5.6" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.5.6" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.12" />
@@ -110,10 +109,9 @@
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-bootstrap:3.0.4" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.5.6" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.12" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-mail:2.6.7" />
-          <element id="library" level="project" name="Maven: com.sun.mail:jakarta.mail:1.6.7" />
           <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:1.2.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:5.3.12" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.10.22" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -27,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/ticket3" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -52,23 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Projets/JAVA/Projet10/Repports/BibliothequeAdministration",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "d15b248c44378db487c523c0a33566fd",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet10/Repports/BibliothequeAdministration&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d15b248c44378db487c523c0a33566fd&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -721,6 +724,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modif lending" />
     <MESSAGE value="modif employee, userAccount et suppression Member" />
@@ -807,13 +821,19 @@
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest.exec" NAME="ReservationServiceImplTest Coverage Results" MODIFIED="1678001792862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp10bibliotheque.bibliothequereservation.Services.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$RoleServiceImplTest.exec" NAME="RoleServiceImplTest Coverage Results" MODIFIED="1679512804945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.ocp7bibliotheque.bibliothequeadministration.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$UserServiceDetailsTest.exec" NAME="UserServiceDetailsTest Coverage Results" MODIFIED="1678905084016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp7bibliotheque.bibliothequeweb.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$BookServiceImplTest.exec" NAME="BookServiceImplTest Coverage Results" MODIFIED="1679415435593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp7bibliotheque.bibliothequebook.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$UserAccountServiceImplTest.exec" NAME="UserAccountServiceImplTest Coverage Results" MODIFIED="1679512499203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$LibraryServiceImplTest.exec" NAME="LibraryServiceImplTest Coverage Results" MODIFIED="1679512822512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.ocp7bibliotheque.bibliothequeadministration.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$UserAccountServiceImplTest.exec" NAME="UserAccountServiceImplTest Coverage Results" MODIFIED="1679512832551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp7bibliotheque.bibliothequeadministration.*</FILTER>
     </SUITE>
   </component>

@@ -11,23 +11,16 @@
         <module name="BibliothequeBatchMail" />
         <module name="BibliothequeWeb" />
         <module name="BibliothequeAdministration" />
-        <module name="BibliothequeBook" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BibliothequeAdministration" target="15" />
       <module name="BibliothequeAdministration (1)" target="15" />
       <module name="BibliothequeAdministration (2)" target="15" />
-      <module name="BibliothequeBatchMail" target="15" />
       <module name="BibliothequeBook" target="15" />
       <module name="BibliothequeConfigServer" target="17" />
-      <module name="BibliothequeEureka" target="15" />
       <module name="BibliothequeGateway" target="16" />
-      <module name="BibliothequeReservation" target="15" />
       <module name="BibliothequeReservation (1) (com.OCP7Bibliotheque)" target="15" />
       <module name="BibliothequeReservation (2) (com.OCP10Bibliotheque)" target="15" />
-      <module name="BibliothequeSpringCloudConfig" target="15" />
-      <module name="BibliothequeWeb" target="15" />
       <module name="OCP7Bibliotheque" target="11" />
       <module name="OCP7BibliothequeWeb" target="17" />
     </bytecodeTargetLevel>
