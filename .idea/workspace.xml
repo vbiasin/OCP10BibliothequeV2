@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Changement branche par défaut (master) dans BibliotheSpringCloudConfig">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/LendingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/LendingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/LendingServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/LendingServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +96,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookServiceImplTest">
+  <component name="RunManager" selected="Spring Boot.BibliothequeWebApplication">
     <configuration name="BookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -372,13 +368,6 @@
       <workItem from="1679329555001" duration="1223000" />
       <workItem from="1679414320331" duration="4547000" />
       <workItem from="1679502841927" duration="8307000" />
-    </task>
-    <task id="LOCAL-00012" summary="Test login">
-      <created>1642009863390</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1642009863390</updated>
     </task>
     <task id="LOCAL-00013" summary="Test login 19/01/2022">
       <created>1642613877885</created>
@@ -716,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680619908791</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master.">
+      <created>1680626892690</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1680626892690</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -734,7 +730,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact" />
     <MESSAGE value="Test recherche utilisateur + ajout role" />
     <MESSAGE value="Test recherche utilisateur + ajout / suppression role" />
     <MESSAGE value="Test recherche utilisateur 260320222" />
@@ -759,7 +754,8 @@
     <MESSAGE value="Mise en place des tests unitaires pour les modules BibliothequeWeb et BibliothqueBook" />
     <MESSAGE value="Fusion du ticket 3 dans Master depuis IDE" />
     <MESSAGE value="Changement branche par défaut (master) dans BibliotheSpringCloudConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement branche par défaut (master) dans BibliotheSpringCloudConfig" />
+    <MESSAGE value="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
