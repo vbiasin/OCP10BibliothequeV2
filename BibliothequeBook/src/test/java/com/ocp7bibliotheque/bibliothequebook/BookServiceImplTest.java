@@ -1,24 +1,23 @@
 package com.ocp7bibliotheque.bibliothequebook;
-import com.ocp7bibliotheque.bibliothequebook.DAO.BookRepository;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import com.ocp7bibliotheque.bibliothequebook.DAO.BookRepository;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
-
 import java.util.*;
-
 import com.ocp7bibliotheque.bibliothequebook.DAO.LendingRepository;
 import com.ocp7bibliotheque.bibliothequebook.DAO.LibraryRepository;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Book;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Lending;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Library;
 import com.ocp7bibliotheque.bibliothequebook.Services.BookServiceImpl;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
 public class BookServiceImplTest {
     @Mock
     private BookRepository bookRepository;
@@ -90,7 +89,7 @@ public class BookServiceImplTest {
         Library library = new Library();
         when(libraryRepository.findById(libraryId)).thenReturn(Optional.of(library));
         Book book = new Book();
-        book.setNumberExemplar(3);
+        book.setNumberExemplarTotal(3);
         book.setLibrary(library);
 
         // Act
@@ -98,7 +97,7 @@ public class BookServiceImplTest {
 
         // Assert
         verify(bookRepository, times(1)).save(book);
-        assertEquals(library, book.getLibrary());
+        Assertions.assertEquals(library, book.getLibrary());
 
     }
 
@@ -108,7 +107,7 @@ public class BookServiceImplTest {
         int libraryId = 2;
         when(libraryRepository.findById(libraryId)).thenReturn(Optional.empty());
         Book book = new Book();
-        book.setNumberExemplar(1);
+        book.setNumberExemplarTotal(1);
 
         // Act & Assert
         assertThrows(Exception.class, () -> bookService.addBook(libraryId, book));
@@ -122,7 +121,7 @@ public class BookServiceImplTest {
         Library library = new Library();
         when(libraryRepository.findById(libraryId)).thenReturn(Optional.of(library));
         Book book = new Book();
-        book.setNumberExemplar(0);
+        book.setNumberExemplarTotal(0);
 
         // Act & Assert
         assertThrows(Exception.class, () -> bookService.addBook(libraryId, book));
@@ -134,16 +133,17 @@ public class BookServiceImplTest {
         // Arrange
         int bookId = 1;
         Book book = new Book();
-        book.setNumberExemplar(2);
+        book.setNumberExemplarTotal(2);
+        book.setId(bookId);
         when(bookRepository.findById(bookId)).thenReturn(Optional.of(book));
         int newNumberOfExemplar = 3;
 
         // Act
-        Book result = bookService.modifyBook(bookId, newNumberOfExemplar);
+        bookService.modifyBook(bookId, newNumberOfExemplar);
 
         // Assert
         verify(bookRepository, times(1)).saveAndFlush(book);
-        assertEquals(newNumberOfExemplar, book.getNumberExemplar());
+        assertEquals(newNumberOfExemplar, book.getNumberExemplarTotal());
     }
 
     @Test
@@ -163,7 +163,7 @@ public class BookServiceImplTest {
         // Arrange
         int bookId = 3;
         Book book = new Book();
-        book.setNumberExemplar(2);
+        book.setNumberExemplarTotal(2);
         when(bookRepository.findById(bookId)).thenReturn(Optional.of(book));
         int newNumberOfExemplar = -1;
 
@@ -188,7 +188,7 @@ public class BookServiceImplTest {
 
         // Then
         assertEquals(3, result.size());
-        assertTrue(result.containsAll(books));
+        Assertions.assertTrue(result.containsAll(books));
     }
 
     @Test
@@ -208,8 +208,8 @@ public class BookServiceImplTest {
 
         // Then
         assertEquals(2, result.size());
-        assertTrue(result.contains(books.get(0)));
-        assertTrue(result.contains(books.get(2)));
+        Assertions.assertTrue(result.contains(books.get(0)));
+        Assertions.assertTrue(result.contains(books.get(2)));
     }
 
     @Test
@@ -225,6 +225,6 @@ public class BookServiceImplTest {
         List<Book> result = bookService.searchBook(title, author);
 
         // Then
-        assertTrue(result.isEmpty());
+        Assertions.assertTrue(result.isEmpty());
     }
 }

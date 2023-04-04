@@ -35,7 +35,7 @@ public class LendingServiceImpl implements ILendingService {
         if(book.isEmpty()) throw new Exception ("Ce livre n'existe pas !");
         Optional<UserAccount> userAccount = userAccountRepository.findByMail(userAccountMail);
         if(userAccount.isEmpty()) throw new Exception ("Cet utilisateur n'existe pas !");
-        if(book.get().getNumberExemplar()==0) throw new Exception ("Il n'y a plus d'exemplaire disponible pour ce livre !");
+        if(book.get().getNumberExemplarActual()==0) throw new Exception ("Il n'y a plus d'exemplaire disponible pour ce livre !");
         Lending lending = new Lending(userAccount.get(),book.get());
         book.get().setNumberExemplarActual(book.get().getNumberExemplarActual()-1);
         if (book.get().getNumberExemplarActual()==0) book.get().setAvailable(false);

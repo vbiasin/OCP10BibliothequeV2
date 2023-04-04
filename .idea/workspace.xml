@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Mise en place des tests unitaires pour les modules BibliothequeWeb et BibliothqueBook">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Changement branche par défaut (master) dans BibliotheSpringCloudConfig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/IUserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/IUserAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/test/java/com/ocp7bibliotheque/bibliothequeadministration/UserAccountServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/test/java/com/ocp7bibliotheque/bibliothequeadministration/UserAccountServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/LendingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/LendingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/LendingServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/LendingServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,83 +100,80 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserAccountServiceImplTest">
-    <configuration name="LibraryServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeAdministration" />
-      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.LibraryServiceImplTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoleServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeAdministration" />
-      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.RoleServiceImplTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserAccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeAdministration" />
-      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserAccountServiceImplTest.testIsValidWithCorrectCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeAdministration" />
+  <component name="RunManager" selected="JUnit.BookServiceImplTest">
+    <configuration name="BookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeBook" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
-      <option name="METHOD_NAME" value="testIsValidWithCorrectCredentials" />
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.BookServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceImplTest.testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.BookServiceImplTest" />
+      <option name="METHOD_NAME" value="testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserAccountServiceImplTest.testSearchUserAccountWithNoMatchesAndNoMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeAdministration" />
+    <configuration name="LendingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeBook" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
-      <option name="METHOD_NAME" value="testSearchUserAccountWithNoMatchesAndNoMail" />
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.LendingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LendingServiceImplTest.testReturnLoanWithValidLendingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.LendingServiceImplTest" />
+      <option name="METHOD_NAME" value="testReturnLoanWithValidLendingId" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAccountServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.UserAccountServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -242,11 +240,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LibraryServiceImplTest" />
-      <item itemvalue="JUnit.RoleServiceImplTest" />
-      <item itemvalue="JUnit.UserAccountServiceImplTest.testSearchUserAccountWithNoMatchesAndNoMail" />
-      <item itemvalue="JUnit.UserAccountServiceImplTest.testIsValidWithCorrectCredentials" />
-      <item itemvalue="JUnit.UserAccountServiceImplTest" />
+      <item itemvalue="JUnit.BookServiceImplTest" />
+      <item itemvalue="JUnit.BookServiceImplTest.testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" />
+      <item itemvalue="JUnit.LendingServiceImplTest" />
+      <item itemvalue="JUnit.LendingServiceImplTest.testReturnLoanWithValidLendingId" />
+      <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
       <item itemvalue="Spring Boot.BibliothequeWebApplication" />
@@ -256,11 +254,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserAccountServiceImplTest" />
-        <item itemvalue="JUnit.LibraryServiceImplTest" />
-        <item itemvalue="JUnit.RoleServiceImplTest" />
-        <item itemvalue="JUnit.UserAccountServiceImplTest.testIsValidWithCorrectCredentials" />
-        <item itemvalue="JUnit.UserAccountServiceImplTest.testSearchUserAccountWithNoMatchesAndNoMail" />
+        <item itemvalue="JUnit.BookServiceImplTest" />
+        <item itemvalue="JUnit.BookServiceImplTest.testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" />
+        <item itemvalue="JUnit.LendingServiceImplTest" />
+        <item itemvalue="JUnit.LendingServiceImplTest.testReturnLoanWithValidLendingId" />
+        <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -374,20 +372,6 @@
       <workItem from="1679329555001" duration="1223000" />
       <workItem from="1679414320331" duration="4547000" />
       <workItem from="1679502841927" duration="8307000" />
-    </task>
-    <task id="LOCAL-00010" summary="Test sécurité">
-      <created>1639324161976</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1639324161976</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Test login">
-      <created>1642009508525</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1642009508525</updated>
     </task>
     <task id="LOCAL-00012" summary="Test login">
       <created>1642009863390</created>
@@ -718,7 +702,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679415622108</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Fusion du ticket 3 dans Master depuis IDE">
+      <created>1680619593587</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1680619593587</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Changement branche par défaut (master) dans BibliotheSpringCloudConfig">
+      <created>1680619908791</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1680619908791</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -736,8 +734,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modif lending" />
-    <MESSAGE value="modif employee, userAccount et suppression Member" />
     <MESSAGE value="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact" />
     <MESSAGE value="Test recherche utilisateur + ajout role" />
     <MESSAGE value="Test recherche utilisateur + ajout / suppression role" />
@@ -761,7 +757,9 @@
     <MESSAGE value="implémentation de la fonction permettant de retourner un prêt" />
     <MESSAGE value="correction extension prêt si date de fin du prêt est dépassé." />
     <MESSAGE value="Mise en place des tests unitaires pour les modules BibliothequeWeb et BibliothqueBook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise en place des tests unitaires pour les modules BibliothequeWeb et BibliothqueBook" />
+    <MESSAGE value="Fusion du ticket 3 dans Master depuis IDE" />
+    <MESSAGE value="Changement branche par défaut (master) dans BibliotheSpringCloudConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement branche par défaut (master) dans BibliotheSpringCloudConfig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

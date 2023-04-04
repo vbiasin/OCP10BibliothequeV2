@@ -46,7 +46,7 @@ public class LendingServiceImplTest {
         MockitoAnnotations.initMocks(this);
 
         book = new Book("Title", "Author");
-        book.setNumberExemplar(4);
+        book.setNumberExemplarTotal(4);
         book.setAvailable(true);
         userAccount = new UserAccount("test@example.com", "toto1234");
 
@@ -57,6 +57,7 @@ public class LendingServiceImplTest {
     @Test
     @DisplayName("Borrowing a book should succeed")
     void borrow_success() throws Exception {
+        book.setNumberExemplarActual(3);
         Lending expectedLending = new Lending(userAccount, book);
         when(bookRepository.findById(anyInt())).thenReturn(Optional.of(book));
         when(userAccountRepository.findByMail(anyString())).thenReturn(Optional.of(userAccount));
@@ -66,7 +67,7 @@ public class LendingServiceImplTest {
         Lending actualLending = lendingService.borrow("test@example.com", 1);
 
         assertEquals(expectedLending, actualLending);
-        assertEquals(book.getNumberExemplar(), actualLending.getBook().getNumberExemplar());
+        assertEquals(book.getNumberExemplarActual(), actualLending.getBook().getNumberExemplarActual());
         assertTrue(actualLending.getBook().getAvailable());
     }
 
@@ -94,7 +95,7 @@ public class LendingServiceImplTest {
     @Test
     @DisplayName("Borrowing a book with no available exemplar should throw an exception")
     void borrow_noExemplarAvailable() {
-        book.setNumberExemplar(0);
+        book.setNumberExemplarActual(0);
         when(bookRepository.findById(anyInt())).thenReturn(Optional.of(book));
         //when(userAccountRepository.findByMail("test@example.com")).thenReturn(Optional.empty());
 
@@ -185,7 +186,8 @@ public class LendingServiceImplTest {
         lending.setId(1);
         Book book = new Book();
         book.setId(1);
-        book.setNumberExemplar(2);
+        book.setNumberExemplarActual(2);
+        book.setCurrentNumberReservation(1);
         lending.setBook(book);
         when(lendingRepository.findById(1)).thenReturn(Optional.of(lending));
         when(bookRepository.findById(1)).thenReturn(Optional.of(book));
@@ -194,7 +196,7 @@ public class LendingServiceImplTest {
         lendingService.returnLoan(1);
 
         // Assert
-        assertEquals(3, book.getNumberExemplar());
+        assertEquals(3, book.getNumberExemplarActual());
         assertEquals("Terminé", lending.getStatus());
         verify(bookRepository, times(1)).saveAndFlush(book);
         verify(lendingRepository, times(1)).saveAndFlush(lending);
@@ -218,7 +220,7 @@ public class LendingServiceImplTest {
         lending.setId(1);
         Book book = new Book();
         book.setId(1);
-        book.setNumberExemplar(2);
+        book.setNumberExemplarActual(2);
         lending.setBook(book);
         when(lendingRepository.findById(1)).thenReturn(Optional.of(lending));
         when(bookRepository.findById(1)).thenReturn(Optional.empty());
