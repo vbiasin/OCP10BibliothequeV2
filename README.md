@@ -19,7 +19,7 @@ Dans le module BibliothequeSpringCloudConfig, configurer le fichier "application
 
 management.endpoints.web.exposure.include=*
 server.port=9101
-spring.cloud.config.server.git.uri=https://github.com/vbiasin/OCP7Bibliotheque
+spring.cloud.config.server.git.uri=https://github.com/vbiasin/OCP10BibliothequeV2.git
 spring.cloud.config.server.git.search-paths=config-server-repo
 spring.cloud.config.server.git.default-label=master
 spring.cloud.config.server.bootstrap=true
