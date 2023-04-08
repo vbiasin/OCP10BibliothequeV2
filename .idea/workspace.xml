@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master.">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeSpringCloudConfig/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeSpringCloudConfig/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,23 +53,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet10/Repports/BibliothequeAdministration&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d15b248c44378db487c523c0a33566fd&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Projets/JAVA/Projet10/Repports/BibliothequeAdministration",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "2d82eda34e91a8a2fd52a12011a4eb2d",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -218,6 +219,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BibliothequeReservationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BibliothequeReservation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocp10bibliotheque.bibliothequereservation.BibliothequeReservationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BibliothequeSpringCloudConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BibliothequeSpringCloudConfig" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
@@ -247,6 +255,7 @@
       <item itemvalue="Spring Boot.BibliothequeAdministrationApplication" />
       <item itemvalue="Spring Boot.BibliothequeBookApplication" />
       <item itemvalue="Spring Boot.BibliothequeBatchMailApplication" />
+      <item itemvalue="Spring Boot.BibliothequeReservationApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -368,13 +377,7 @@
       <workItem from="1679329555001" duration="1223000" />
       <workItem from="1679414320331" duration="4547000" />
       <workItem from="1679502841927" duration="8307000" />
-    </task>
-    <task id="LOCAL-00013" summary="Test login 19/01/2022">
-      <created>1642613877885</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1642613877885</updated>
+      <workItem from="1680968642234" duration="894000" />
     </task>
     <task id="LOCAL-00014" summary="Test login 19/01/2022">
       <created>1642614001972</created>
@@ -712,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680626892690</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master.">
+      <created>1680627295926</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1680627295926</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -730,7 +740,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test recherche utilisateur + ajout role" />
     <MESSAGE value="Test recherche utilisateur + ajout / suppression role" />
     <MESSAGE value="Test recherche utilisateur 260320222" />
     <MESSAGE value="Test suppression role 06042022" />
@@ -755,7 +764,8 @@
     <MESSAGE value="Fusion du ticket 3 dans Master depuis IDE" />
     <MESSAGE value="Changement branche par défaut (master) dans BibliotheSpringCloudConfig" />
     <MESSAGE value="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master." />
+    <MESSAGE value="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
