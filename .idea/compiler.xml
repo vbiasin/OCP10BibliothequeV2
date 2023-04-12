@@ -10,13 +10,14 @@
         <module name="BibliothequeSpringCloudConfig" />
         <module name="BibliothequeBatchMail" />
         <module name="BibliothequeWeb" />
+        <module name="BibliothequeReservation" />
         <module name="BibliothequeAdministration" />
+        <module name="BibliothequeBook" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BibliothequeAdministration (1)" target="15" />
       <module name="BibliothequeAdministration (2)" target="15" />
-      <module name="BibliothequeBook" target="15" />
       <module name="BibliothequeConfigServer" target="17" />
       <module name="BibliothequeGateway" target="16" />
       <module name="BibliothequeReservation (1) (com.OCP7Bibliotheque)" target="15" />

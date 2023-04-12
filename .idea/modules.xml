@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BibliothequeAdministration/BibliothequeAdministration.iml" filepath="$PROJECT_DIR$/BibliothequeAdministration/BibliothequeAdministration.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BibliothequeBatchMail/BibliothequeBatchMail.iml" filepath="$PROJECT_DIR$/BibliothequeBatchMail/BibliothequeBatchMail.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BibliothequeBook/BibliothequeBook.iml" filepath="$PROJECT_DIR$/BibliothequeBook/BibliothequeBook.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BibliothequeEureka/BibliothequeEureka.iml" filepath="$PROJECT_DIR$/BibliothequeEureka/BibliothequeEureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BibliothequeSpringCloudConfig/BibliothequeSpringCloudConfig.iml" filepath="$PROJECT_DIR$/BibliothequeSpringCloudConfig/BibliothequeSpringCloudConfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BibliothequeWeb/BibliothequeWeb.iml" filepath="$PROJECT_DIR$/BibliothequeWeb/BibliothequeWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server-repo/config-server-repo.iml" filepath="$PROJECT_DIR$/config-server-repo/config-server-repo.iml" />
     </modules>
   </component>

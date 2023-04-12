@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/BibliothequeAdministration/pom.xml" />
         <option value="$PROJECT_DIR$/BibliothequeBatchMail/pom.xml" />
         <option value="$PROJECT_DIR$/BibliothequeReservation/pom.xml" />
+        <option value="$PROJECT_DIR$/BibliothequeBook/pom.xml" />
       </list>
     </option>
   </component>
