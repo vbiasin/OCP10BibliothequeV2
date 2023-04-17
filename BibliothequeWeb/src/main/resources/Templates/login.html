@@ -1,31 +1,31 @@
-  <!DOCTYPE html>
-  <html xmlns:th="http://www.thymeleaf.org"
-        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
-        layout:decorate="~{template.html}">
-    <head>
-      <meta charset="utf-8"/>
-      <title>Login</title>
-    </head>
-    <body>
-      <section layout:fragment="content" ">
-        <h1>La médiathèque Orbis Unum vous souhaite la bienvenue sur son site web !</h1>
-        <div class="jumbotron”>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      layout:decorate="~{template.html}">
+<head>
+  <meta charset="utf-8"/>
+  <title>Login</title>
+</head>
+<body>
+<section layout:fragment="content" ">
+<h1>La médiathèque Orbis Unum vous souhaite la bienvenue sur son site web !</h1>
+<div class="jumbotron”>
            <form class="text-left text-md-center" th:action="@{/login}" method="post">
-      <div>
-        <label>Mail:</label>
-        <input type="text" name="username"/>
-      </div>
-      <div>
-        <label>Mot de passe:</label>
-        <input type="password" name="password"/>
-      </div>
-      <button type="submit">OK</button>
-      </form>
-      <div th:if="${param.error}" >Mauvais identifiants
-      </div>
-      <div>Vous n'avez pas de compte ? <a th:href="@{/inscription}">s'inscrire</a></div>
-        </div>
-      </section>
-    </body>
-  </html>
+<div>
+  <label>Mail:</label>
+  <input type="text" name="username"/>
+</div>
+<div>
+  <label>Mot de passe:</label>
+  <input type="password" name="password"/>
+</div>
+<button type="submit">OK</button>
+</form>
+<div th:if="${param.error}" >Mauvais identifiants
+</div>
+<div>Vous n'avez pas de compte ? <a th:href="@{/inscription}">s'inscrire</a></div>
+</div>
+</section>
+</body>
+</html>
