@@ -43,7 +43,8 @@ public class ReservationServiceImplTest {
     private BookRepository bookRepository;
 
     @InjectMocks
-    private ReservationServiceImpl manager = new ReservationServiceImpl(lendingRepository,reservationRepository, emailSender,userAccountRepository,bookRepository);
+    //private ReservationServiceImpl manager = new ReservationServiceImpl(lendingRepository,reservationRepository, emailSender,userAccountRepository,bookRepository);
+    private ReservationServiceImpl manager = new ReservationServiceImpl();
 
     private Book book = new Book();
     private UserAccount user = new UserAccount();

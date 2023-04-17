@@ -15,13 +15,13 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.12.22" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.5.6" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.5.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.12" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.5.5" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.5.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.10" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.7" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.5.6" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.5.5" />
           <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:4.0.3" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.12" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.10" />
           <element id="library" level="project" name="Maven: jakarta.transaction:jakarta.transaction-api:1.3.3" />
           <element id="library" level="project" name="Maven: jakarta.persistence:jakarta.persistence-api:2.2.3" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.4.32.Final" />
@@ -35,29 +35,29 @@
           <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.5" />
           <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.5" />
           <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:2.5.6" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.5.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.3.12" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.12" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:2.5.5" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.5.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.3.10" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.10" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.32" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.3.12" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.5.6" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.5.6" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.5.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.3.10" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.5.5" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.5.5" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.5.5" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.6" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.6" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.14.1" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.14.1" />
           <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.32" />
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.28" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.12" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.10" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.12" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.12" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.12" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.12" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.10" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.10" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.10" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:3.0.4" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:3.0.4" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.5.3" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.5.2" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:3.0.4" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-rsa:1.0.10.RELEASE" />
           <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.68" />
@@ -98,18 +98,18 @@
           <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-loadbalancer:3.0.4" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-loadbalancer:3.0.4" />
-          <element id="library" level="project" name="Maven: io.projectreactor:reactor-core:3.4.11" />
+          <element id="library" level="project" name="Maven: io.projectreactor:reactor-core:3.4.10" />
           <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.3" />
           <element id="library" level="project" name="Maven: io.projectreactor.addons:reactor-extra:3.4.5" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-cache:2.5.6" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-cache:2.5.5" />
           <element id="library" level="project" name="Maven: com.stoyanr:evictor:1.0.0" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.27" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.26" />
           <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5" />
           <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" />
           <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-bootstrap:3.0.4" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.5.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.12" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.5.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.10" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-mail:2.6.7" />
           <element id="library" level="project" name="Maven: com.sun.mail:jakarta.mail:1.6.7" />
           <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:1.2.2" />

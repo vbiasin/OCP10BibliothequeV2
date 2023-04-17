@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master.">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="pom">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BibliothequeAdministration_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BibliothequeAdministration_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BibliothequeBatchMail_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BibliothequeBatchMail_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/BibliothequeBook_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BibliothequeBook_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BibliothequeWeb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BibliothequeWeb_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebAdministrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebAdministrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,27 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Projets/JAVA/Projet10/OCP10BibliothequeV2/BibliothequeReservation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.36091954",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "90edd6ea703510576907f0423d87e0e4",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet10/OCP10BibliothequeV2/BibliothequeReservation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.36091954&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;41edfccbe599f619266b7d450a24d304&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -116,7 +116,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeBatchMailApplication">
     <configuration name="BookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -128,22 +128,6 @@
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.BookServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookServiceImplTest.testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.BookServiceImplTest" />
-      <option name="METHOD_NAME" value="testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,22 +147,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LendingServiceImplTest.testReturnLoanWithValidLendingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.LendingServiceImplTest" />
-      <option name="METHOD_NAME" value="testReturnLoanWithValidLendingId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserAccountServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -189,6 +157,36 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.UserAccountServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeAdministration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeweb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeweb" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeweb.UserServiceDetailsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,10 +261,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserAccountServiceImplTest" />
+      <item itemvalue="JUnit.UserServiceDetailsTest" />
       <item itemvalue="JUnit.BookServiceImplTest" />
-      <item itemvalue="JUnit.BookServiceImplTest.testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" />
       <item itemvalue="JUnit.LendingServiceImplTest" />
-      <item itemvalue="JUnit.LendingServiceImplTest.testReturnLoanWithValidLendingId" />
       <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
@@ -278,11 +276,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookServiceImplTest" />
-        <item itemvalue="JUnit.BookServiceImplTest.testModifyBook_whenBookExistsAndPositiveNumberOfExemplarProvided" />
-        <item itemvalue="JUnit.LendingServiceImplTest" />
-        <item itemvalue="JUnit.LendingServiceImplTest.testReturnLoanWithValidLendingId" />
+        <item itemvalue="JUnit.UserServiceDetailsTest" />
         <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
+        <item itemvalue="JUnit.LendingServiceImplTest" />
+        <item itemvalue="JUnit.BookServiceImplTest" />
+        <item itemvalue="JUnit.UserAccountServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -398,14 +396,11 @@
       <workItem from="1679502841927" duration="8307000" />
       <workItem from="1680968642234" duration="894000" />
       <workItem from="1681298493926" duration="473000" />
-      <workItem from="1681299017932" duration="935000" />
-    </task>
-    <task id="LOCAL-00014" summary="Test login 19/01/2022">
-      <created>1642614001972</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1642614001974</updated>
+      <workItem from="1681299017932" duration="1364000" />
+      <workItem from="1681300392953" duration="4191000" />
+      <workItem from="1681304597458" duration="507000" />
+      <workItem from="1681305114419" duration="264000" />
+      <workItem from="1681744385662" duration="591000" />
     </task>
     <task id="LOCAL-00015" summary="Test login 26/01/2022">
       <created>1643218691286</created>
@@ -743,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680627295926</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="pom">
+      <created>1681300121045</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1681300121045</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,7 +763,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test recherche utilisateur + ajout / suppression role" />
     <MESSAGE value="Test recherche utilisateur 260320222" />
     <MESSAGE value="Test suppression role 06042022" />
     <MESSAGE value="Ajout suppression compte utilisateur.&#10;Test OK" />
@@ -786,16 +787,12 @@
     <MESSAGE value="Changement branche par défaut (master) dans BibliotheSpringCloudConfig" />
     <MESSAGE value="Changement dans module BibliothequeBook (TESTS) suite à la fusion du ticket 3 dans master." />
     <MESSAGE value="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master." />
+    <MESSAGE value="pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Controller/ContactController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Service/MailAlert.java</url>
           <line>55</line>
