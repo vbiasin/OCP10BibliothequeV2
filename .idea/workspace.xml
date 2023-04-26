@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="modification du pom (bibliothequeWeb)">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="jeu de données">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +109,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeWebApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
     <configuration name="LendingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -399,21 +400,7 @@
       <workItem from="1681877669099" duration="2899000" />
       <workItem from="1682271975996" duration="613000" />
       <workItem from="1682435520955" duration="24000" />
-      <workItem from="1682521349888" duration="4086000" />
-    </task>
-    <task id="LOCAL-00017" summary="Test2 login 26/01/2022">
-      <created>1643219308135</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1643219308135</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Test2 login 26/01/2022">
-      <created>1643219853540</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1643219853540</updated>
+      <workItem from="1682521349888" duration="5768000" />
     </task>
     <task id="LOCAL-00019" summary="modif lending">
       <created>1644352516317</created>
@@ -744,7 +731,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681750062482</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="jeu de données">
+      <created>1682526301451</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526301451</updated>
+    </task>
+    <task id="LOCAL-00067" summary="jeu de données">
+      <created>1682526402303</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526402303</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,7 +763,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test suppression role 06042022" />
     <MESSAGE value="Ajout suppression compte utilisateur.&#10;Test OK" />
     <MESSAGE value="Ajout suppression bibliotheque.&#10;Test OK" />
     <MESSAGE value="Modification structure entitée Book" />
@@ -787,7 +787,8 @@
     <MESSAGE value="Changement BDD dans certains fichiers properties suite à la fusion du ticket 3 dans master." />
     <MESSAGE value="pom" />
     <MESSAGE value="modification du pom (bibliothequeWeb)" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification du pom (bibliothequeWeb)" />
+    <MESSAGE value="jeu de données" />
+    <option name="LAST_COMMIT_MESSAGE" value="jeu de données" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
