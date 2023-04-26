@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="modification du pom (bibliothequeWeb)">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BibliothequeWeb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BibliothequeWeb_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,22 +108,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeWebApplication">
-    <configuration name="BookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.BookServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
     <configuration name="LendingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -136,6 +119,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.LendingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeReservation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,21 +154,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserAccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeAdministration" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeWeb" />
       <extension name="coverage">
@@ -182,6 +165,22 @@
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeweb" />
       <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeweb.UserServiceDetailsTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeweb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeweb" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeweb.UserServiceDetailsTest" />
+      <option name="METHOD_NAME" value="loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -255,9 +254,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserAccountServiceImplTest" />
+      <item itemvalue="JUnit.ReservationServiceImplTest" />
+      <item itemvalue="JUnit.UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
       <item itemvalue="JUnit.UserServiceDetailsTest" />
-      <item itemvalue="JUnit.BookServiceImplTest" />
       <item itemvalue="JUnit.LendingServiceImplTest" />
       <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
@@ -271,10 +270,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserServiceDetailsTest" />
+        <item itemvalue="JUnit.UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
+        <item itemvalue="JUnit.ReservationServiceImplTest" />
         <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
         <item itemvalue="JUnit.LendingServiceImplTest" />
-        <item itemvalue="JUnit.BookServiceImplTest" />
-        <item itemvalue="JUnit.UserAccountServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -395,14 +394,12 @@
       <workItem from="1681304597458" duration="507000" />
       <workItem from="1681305114419" duration="264000" />
       <workItem from="1681744385662" duration="4945000" />
-      <workItem from="1681749346740" duration="659000" />
-    </task>
-    <task id="LOCAL-00016" summary="Test2 login 26/01/2022">
-      <created>1643218915849</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1643218915849</updated>
+      <workItem from="1681749346740" duration="864000" />
+      <workItem from="1681832315157" duration="535000" />
+      <workItem from="1681877669099" duration="2899000" />
+      <workItem from="1682271975996" duration="613000" />
+      <workItem from="1682435520955" duration="24000" />
+      <workItem from="1682521349888" duration="4086000" />
     </task>
     <task id="LOCAL-00017" summary="Test2 login 26/01/2022">
       <created>1643219308135</created>
@@ -740,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681745305055</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="modification du pom (bibliothequeWeb)">
+      <created>1681750062482</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1681750062482</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
