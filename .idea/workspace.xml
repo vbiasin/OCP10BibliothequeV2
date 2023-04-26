@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="jeu de données">
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="correction annulation réservation">
+      <change afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/DAO/ReservationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -400,14 +401,8 @@
       <workItem from="1681877669099" duration="2899000" />
       <workItem from="1682271975996" duration="613000" />
       <workItem from="1682435520955" duration="24000" />
-      <workItem from="1682521349888" duration="5768000" />
-    </task>
-    <task id="LOCAL-00019" summary="modif lending">
-      <created>1644352516317</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1644352516318</updated>
+      <workItem from="1682521349888" duration="6894000" />
+      <workItem from="1682530995326" duration="836000" />
     </task>
     <task id="LOCAL-00020" summary="modif lending">
       <created>1644353123777</created>
@@ -745,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682526402303</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="correction annulation réservation">
+      <created>1682528102553</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1682528102553</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -763,7 +765,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout suppression compte utilisateur.&#10;Test OK" />
     <MESSAGE value="Ajout suppression bibliotheque.&#10;Test OK" />
     <MESSAGE value="Modification structure entitée Book" />
     <MESSAGE value="Modification structure entitée Book + Library" />
@@ -788,7 +789,8 @@
     <MESSAGE value="pom" />
     <MESSAGE value="modification du pom (bibliothequeWeb)" />
     <MESSAGE value="jeu de données" />
-    <option name="LAST_COMMIT_MESSAGE" value="jeu de données" />
+    <MESSAGE value="correction annulation réservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction annulation réservation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

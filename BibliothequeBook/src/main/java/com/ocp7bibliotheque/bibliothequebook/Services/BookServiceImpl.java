@@ -3,9 +3,11 @@ package com.ocp7bibliotheque.bibliothequebook.Services;
 import com.ocp7bibliotheque.bibliothequebook.DAO.BookRepository;
 import com.ocp7bibliotheque.bibliothequebook.DAO.LendingRepository;
 import com.ocp7bibliotheque.bibliothequebook.DAO.LibraryRepository;
+import com.ocp7bibliotheque.bibliothequebook.DAO.ReservationRepository;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Book;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Lending;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Library;
+import com.ocp7bibliotheque.bibliothequebook.Entites.Reservation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -33,6 +35,9 @@ public class BookServiceImpl implements IBookService {
     @Autowired
     LendingRepository lendingRepository;
 
+    @Autowired
+    ReservationRepository reservationRepository;
+
     @Override
     public void removeBook(int idBook) throws Exception {
         Optional<Book> book = bookRepository.findById(idBook);
@@ -41,6 +46,11 @@ public class BookServiceImpl implements IBookService {
         for (Lending loan:listLoans
              ) {
             lendingRepository.delete(loan);
+        }
+        List<Reservation> listReservations = reservationRepository.findByBook(book.get());
+        for (Reservation reservation:listReservations
+        ) {
+            reservationRepository.delete(reservation);
         }
         bookRepository.delete(book.get());
     }

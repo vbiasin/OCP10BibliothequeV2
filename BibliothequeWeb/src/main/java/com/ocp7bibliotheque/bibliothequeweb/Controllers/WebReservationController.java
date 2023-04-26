@@ -48,6 +48,6 @@ public class WebReservationController {
     @PostMapping("/cancelReservation")
     public String removeUserAccount(@RequestParam int idReservation) {
         reservationProxy.cancelReservation(idReservation);
-        return "redirect:/reservation";
+        return "/reservation";
     }
 }
