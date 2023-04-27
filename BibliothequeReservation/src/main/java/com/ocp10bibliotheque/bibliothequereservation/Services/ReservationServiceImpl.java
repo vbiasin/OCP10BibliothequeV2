@@ -160,7 +160,7 @@ public class ReservationServiceImpl implements IReservationService{
         LocalDateTime nextReturn = null;
         for  (Lending lending:lendings){
             if(nextReturn==null) nextReturn=lending.getEndDate();
-            if(nextReturn.isAfter(lending.getEndDate()))nextReturn=nextReturn=lending.getEndDate();
+            if(nextReturn.isAfter(lending.getEndDate()))nextReturn=lending.getEndDate();
         }
         book.get().setNextReturn(nextReturn);
         bookRepository.saveAndFlush(book.get());
@@ -208,6 +208,7 @@ public class ReservationServiceImpl implements IReservationService{
         reservation.get().setStatus("Annulée");
         reservation.get().setCanBeCancel(false);
         reservation.get().getBook().setCurrentNumberReservation(reservation.get().getBook().getCurrentNumberReservation()-1);
+        reservation.get().getBook().setNumberExemplarActual(reservation.get().getBook().getNumberExemplarTotal()+1);
         bookRepository.saveAndFlush(reservation.get().getBook());
         Reservation nextReservation = getNextReservation(reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente"));
         if(nextReservation!=null) reserve(nextReservation.getUserAccount().getMail(),nextReservation.getBook().getId());
