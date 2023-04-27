@@ -47,6 +47,8 @@ public class ReservationServiceImpl implements IReservationService{
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.debug", "true");
         return mailSender;
+
+
     }
 
     @Autowired
@@ -156,13 +158,11 @@ public class ReservationServiceImpl implements IReservationService{
     public void checkNextReturnOfBook(int idBook) throws Exception {
         Optional<Book> book = bookRepository.findById(idBook);
         if (book.isEmpty()) throw new Exception("Ce livre n'existe pas !");
-        List<Lending> lendings = lendingRepository.findByBook(book.get());
-        LocalDateTime nextReturn = null;
+        List<Lending> lendings = lendingRepository.findByBookId(idBook);
         for  (Lending lending:lendings){
-            if(nextReturn==null) nextReturn=lending.getEndDate();
-            if(nextReturn.isAfter(lending.getEndDate()))nextReturn=lending.getEndDate();
+            if(book.get().getNextReturn()==null) book.get().setNextReturn(lending.getEndDate());
+            else if(book.get().getNextReturn().isAfter(lending.getEndDate()))book.get().setNextReturn(lending.getEndDate());
         }
-        book.get().setNextReturn(nextReturn);
         bookRepository.saveAndFlush(book.get());
     }
 
@@ -176,15 +176,14 @@ public class ReservationServiceImpl implements IReservationService{
         ) {
             if (role.getName().equals("ADMIN") || role.getName().equals("EMPLOYEE")) return reservationRepository.findAll();
         }
-        List<Reservation> reservationList = reservationRepository.findAll();
+        List<Reservation> reservationList = reservationRepository.findByUserAccount(userAccount.get());
         for (Reservation reservation:reservationList){
             if (reservation.getStatus().equals("en attente")){
                 checkCurrentPosition(reservation.getId(),userAccountMail);
-                checkNextReturnOfBook(reservation.getBook().getId());
             }
-
+            checkNextReturnOfBook(reservation.getBook().getId());
         }
-        return reservationRepository.findByUserAccount(userAccount.get());
+        return reservationList;
     }
 
     @Override
