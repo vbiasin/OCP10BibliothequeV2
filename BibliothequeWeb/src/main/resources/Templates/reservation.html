@@ -28,12 +28,12 @@
                             <td th:text= "${reservation.status}"></td>
                             <td th:text= "${reservation.book.nextReturn}"></td>
                             <td>
-                                <form th:action="@{/cancelReservation(idReservation=${reservation.id})}" method="post">
+                                <form  th:if="${reservation.canBeCancel== true}" th:action="@{/cancelReservation(idReservation=${reservation.id})}" method="post">
 
                                     <button type="submit"  >Annuler Réservation</button></form>
                             </td>
                             <td sec:authorize="hasAuthority('EMPLOYEE')">
-                                <form th:action="@{/validateReservation(idReservation=${reservation.id})}" method="post">
+                                <form   th:if="${reservation.canBeCancel== true}" th:action="@{/validateReservation(idReservation=${reservation.id})}" method="post">
 
                                     <button type="submit"  >Valider Réservation</button></form>
                             </td>

@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="correction annulation réservation">
-      <change afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/DAO/ReservationRepository.java" afterDir="false" />
+    <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="correction suppression livre">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBatchMail/src/main/java/com/ocp7bibliotheque/bibliothequebatchmail/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Entites/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/main/java/com/ocp7bibliotheque/bibliothequebook/Services/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/resources/Templates/reservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +45,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -45,6 +57,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6f80b7c1-cbf1-4016-ab29-4f566e301342" />
+        <option name="url" value="https://github.com/vbiasin/OCP10BibliothequeV2.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,7 +130,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeWebApplication">
     <configuration name="LendingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -402,14 +422,8 @@
       <workItem from="1682271975996" duration="613000" />
       <workItem from="1682435520955" duration="24000" />
       <workItem from="1682521349888" duration="6894000" />
-      <workItem from="1682530995326" duration="836000" />
-    </task>
-    <task id="LOCAL-00020" summary="modif lending">
-      <created>1644353123777</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1644353123777</updated>
+      <workItem from="1682530995326" duration="2595000" />
+      <workItem from="1682565801820" duration="798000" />
     </task>
     <task id="LOCAL-00021" summary="modif employee, userAccount et suppression Member">
       <created>1645028963231</created>
@@ -747,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682528102553</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="correction suppression livre">
+      <created>1682531850934</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1682531850934</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -765,7 +786,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout suppression bibliotheque.&#10;Test OK" />
     <MESSAGE value="Modification structure entitée Book" />
     <MESSAGE value="Modification structure entitée Book + Library" />
     <MESSAGE value="Ajout Proxies" />
@@ -790,7 +810,8 @@
     <MESSAGE value="modification du pom (bibliothequeWeb)" />
     <MESSAGE value="jeu de données" />
     <MESSAGE value="correction annulation réservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction annulation réservation" />
+    <MESSAGE value="correction suppression livre" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction suppression livre" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

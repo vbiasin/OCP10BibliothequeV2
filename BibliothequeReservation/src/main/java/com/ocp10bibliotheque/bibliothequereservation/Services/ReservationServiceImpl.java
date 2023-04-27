@@ -206,6 +206,7 @@ public class ReservationServiceImpl implements IReservationService{
         Optional<Reservation> reservation = reservationRepository.findById(idReservation);
         if (reservation.isEmpty()) throw new Exception("Cette réservation n'existe pas !");
         reservation.get().setStatus("Annulée");
+        reservation.get().setCanBeCancel(false);
         reservation.get().getBook().setCurrentNumberReservation(reservation.get().getBook().getCurrentNumberReservation()-1);
         bookRepository.saveAndFlush(reservation.get().getBook());
         Reservation nextReservation = getNextReservation(reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente"));

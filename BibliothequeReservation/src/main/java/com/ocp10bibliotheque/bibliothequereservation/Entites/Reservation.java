@@ -14,6 +14,7 @@ public class Reservation implements Serializable {
     private String status;
     private int currentPosition;
     private boolean mailIsSend;
+    private boolean canBeCancel;
     @OneToOne
     private UserAccount userAccount;
     @OneToOne
@@ -29,12 +30,15 @@ public class Reservation implements Serializable {
         this.book = book;
         this.library = library;
         this.mailIsSend = false;
+        this.canBeCancel =true;
     }
 
     public Reservation(String status, UserAccount userAccount, Book book) {
         this.status = status;
         this.userAccount = userAccount;
         this.book = book;
+        this.mailIsSend = false;
+        this.canBeCancel =true;
     }
 
     public int getId() {
@@ -107,5 +111,13 @@ public class Reservation implements Serializable {
 
     public void setCurrentPosition(int currentPosition) {
         this.currentPosition = currentPosition;
+    }
+
+    public boolean isCanBeCancel() {
+        return canBeCancel;
+    }
+
+    public void setCanBeCancel(boolean canBeCancel) {
+        this.canBeCancel = canBeCancel;
     }
 }
