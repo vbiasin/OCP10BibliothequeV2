@@ -20,6 +20,7 @@ public class Lending implements Serializable {
     @OneToOne
     private Book book;
 
+
     public Lending() {
     }
 

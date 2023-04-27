@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="correction annulation réservation (double annulation)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Lending.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Entites/Lending.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookServiceImplTest">
+  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
     <configuration name="BookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -414,14 +414,7 @@
       <workItem from="1682435520955" duration="24000" />
       <workItem from="1682521349888" duration="6894000" />
       <workItem from="1682530995326" duration="2595000" />
-      <workItem from="1682565801820" duration="3782000" />
-    </task>
-    <task id="LOCAL-00028" summary="Test recherche utilisateur + ajout / suppression role">
-      <created>1647455739896</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1647455739896</updated>
+      <workItem from="1682565801820" duration="6748000" />
     </task>
     <task id="LOCAL-00029" summary="Test recherche utilisateur + ajout / suppression role">
       <created>1647455969639</created>
@@ -759,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682569039959</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="correction annulation réservation (double annulation)">
+      <created>1682569839552</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1682569839552</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
