@@ -137,7 +137,7 @@ public class ReservationServiceImpl implements IReservationService{
         Optional<Reservation> reservation = reservationRepository.findById(idReservation);
         if (reservation.isEmpty()) throw new Exception("Cette réservation n'existe pas !");
         List<Reservation> reservations = reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente");
-        int currentPosition = 0;
+        int currentPosition = 1;
         boolean check = false;
         for (Reservation reservationFromList:reservations){
             if(check == false){
