@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="correction annulation réservation (double annulation)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/target/classes/com/ocp10bibliotheque/bibliothequereservation/Entites/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +122,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
+  <component name="RunManager" selected="Spring Boot.BibliothequeAdministrationApplication">
     <configuration name="LendingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -415,14 +415,7 @@
       <workItem from="1682435520955" duration="24000" />
       <workItem from="1682521349888" duration="6894000" />
       <workItem from="1682530995326" duration="2595000" />
-      <workItem from="1682565801820" duration="2261000" />
-    </task>
-    <task id="LOCAL-00024" summary="modif employee&#10;ajout DTO et ContactDTO&#10;Test création de BDD + ajout contact">
-      <created>1646550959740</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1646550959740</updated>
+      <workItem from="1682565801820" duration="2867000" />
     </task>
     <task id="LOCAL-00025" summary="Test recherche utilisateur + ajout role">
       <created>1646944976831</created>
@@ -760,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682567413809</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="correction annulation réservation (double annulation)">
+      <created>1682568119319</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1682568119319</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
