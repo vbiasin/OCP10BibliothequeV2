@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fbe8f56-1dce-497f-b78e-1e1cd00f8faf" name="Changes" comment="correction annulation réservation (double annulation)">
-      <change beforePath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeAdministration/src/main/java/com/ocp7bibliotheque/bibliothequeadministration/Services/UserAccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-repo/BibliothequeWeb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeBook/src/test/java/com/ocp7bibliotheque/bibliothequebook/BookServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,8 +121,8 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeAdministrationApplication">
-    <configuration name="LendingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookServiceImplTest">
+    <configuration name="BookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +131,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.LendingServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.BookServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -268,10 +267,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.BookServiceImplTest" />
       <item itemvalue="JUnit.ReservationServiceImplTest" />
       <item itemvalue="JUnit.UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
       <item itemvalue="JUnit.UserServiceDetailsTest" />
-      <item itemvalue="JUnit.LendingServiceImplTest" />
       <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
@@ -283,11 +282,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookServiceImplTest" />
+        <item itemvalue="JUnit.ReservationServiceImplTest" />
         <item itemvalue="JUnit.UserServiceDetailsTest" />
         <item itemvalue="JUnit.UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
-        <item itemvalue="JUnit.ReservationServiceImplTest" />
         <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
-        <item itemvalue="JUnit.LendingServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -415,28 +414,7 @@
       <workItem from="1682435520955" duration="24000" />
       <workItem from="1682521349888" duration="6894000" />
       <workItem from="1682530995326" duration="2595000" />
-      <workItem from="1682565801820" duration="2867000" />
-    </task>
-    <task id="LOCAL-00025" summary="Test recherche utilisateur + ajout role">
-      <created>1646944976831</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1646944976831</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Test recherche utilisateur + ajout / suppression role">
-      <created>1647453818662</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1647453818663</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Test recherche utilisateur + ajout / suppression role">
-      <created>1647453945962</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1647453945962</updated>
+      <workItem from="1682565801820" duration="3782000" />
     </task>
     <task id="LOCAL-00028" summary="Test recherche utilisateur + ajout / suppression role">
       <created>1647455739896</created>
@@ -760,7 +738,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682568119319</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="correction annulation réservation (double annulation)">
+      <created>1682568729789</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1682568729789</updated>
+    </task>
+    <task id="LOCAL-00075" summary="correction annulation réservation (double annulation)">
+      <created>1682568948475</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1682568948475</updated>
+    </task>
+    <task id="LOCAL-00076" summary="correction annulation réservation (double annulation)">
+      <created>1682569039959</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1682569039959</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

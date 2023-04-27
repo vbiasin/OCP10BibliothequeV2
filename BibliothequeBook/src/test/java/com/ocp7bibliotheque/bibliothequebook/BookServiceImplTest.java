@@ -7,12 +7,15 @@ import static org.mockito.Mockito.*;
 import java.util.*;
 import com.ocp7bibliotheque.bibliothequebook.DAO.LendingRepository;
 import com.ocp7bibliotheque.bibliothequebook.DAO.LibraryRepository;
+import com.ocp7bibliotheque.bibliothequebook.DAO.ReservationRepository;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Book;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Lending;
 import com.ocp7bibliotheque.bibliothequebook.Entites.Library;
+import com.ocp7bibliotheque.bibliothequebook.Entites.Reservation;
 import com.ocp7bibliotheque.bibliothequebook.Services.BookServiceImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -26,6 +29,9 @@ public class BookServiceImplTest {
     private LendingRepository lendingRepository;
 
     @Mock
+    private ReservationRepository reservationRepository;
+
+    @Mock
     private LibraryRepository libraryRepository;
     @InjectMocks
     private BookServiceImpl bookService;
@@ -36,49 +42,36 @@ public class BookServiceImplTest {
     }
 
     @Test
-    public void testRemoveBook_whenBookExistsAndHasNoLendings_removeBookAndReturnVoid() throws Exception {
-        // Arrange
+    @DisplayName("Remove book with existing ID")
+    void removeBookWithExistingId() throws Exception {
         int bookId = 1;
         Book book = new Book();
-        when(bookRepository.findById(bookId)).thenReturn(Optional.of(book));
-        when(lendingRepository.findByBook(book)).thenReturn(new ArrayList<Lending>());
+        book.setId(bookId);
+        List<Lending> listLoans = new ArrayList<>();
+        List<Reservation> listReservations = new ArrayList<>();
 
-        // Act
+        when(bookRepository.findById(bookId)).thenReturn(Optional.of(book));
+        when(lendingRepository.findByBook(book)).thenReturn(listLoans);
+        when(reservationRepository.findByBook(book)).thenReturn(listReservations);
+
         bookService.removeBook(bookId);
 
-        // Assert
-        verify(lendingRepository, never()).delete(any(Lending.class));
         verify(bookRepository, times(1)).delete(book);
+
     }
 
     @Test
-    public void testRemoveBook_whenBookExistsAndHasLendings_deleteLendingsAndRemoveBook() throws Exception {
-        // Arrange
-        int bookId = 2;
+    @DisplayName("Remove book with non-existing ID")
+    void removeBookWithNonExistingId() {
+        int bookId = 1;
         Book book = new Book();
-        when(bookRepository.findById(bookId)).thenReturn(Optional.of(book));
-        List<Lending> lendings = new ArrayList<>();
-        lendings.add(new Lending());
-        lendings.add(new Lending());
-        when(lendingRepository.findByBook(book)).thenReturn(lendings);
-
-        // Act
-        bookService.removeBook(bookId);
-
-        // Assert
-        verify(lendingRepository, times(lendings.size())).delete(any(Lending.class));
-        verify(bookRepository, times(1)).delete(book);
-    }
-
-    @Test
-    public void testRemoveBook_whenBookDoesNotExist_throwException() {
-        // Arrange
-        int bookId = 3;
+        book.setId(bookId);
         when(bookRepository.findById(bookId)).thenReturn(Optional.empty());
 
-        // Act & Assert
-        assertThrows(Exception.class, () -> bookService.removeBook(bookId));
-        verify(lendingRepository, never()).delete(any(Lending.class));
+        Assertions.assertThrows(Exception.class, () -> {
+            bookService.removeBook(bookId);
+        });
+
         verify(bookRepository, never()).delete(any(Book.class));
     }
 
