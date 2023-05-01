@@ -48,7 +48,7 @@ public class WebLendingController {
     @PostMapping("/extendLoan")
     public String extendLoan(@RequestParam int idLending) {
         bookProxy.extendLoan(idLending);
-        return  "redirect:/loan";
+        return  "redirect:/loans";
     }
 
 

@@ -24,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http.formLogin().loginPage("/login").defaultSuccessUrl("/home", true);
         http.authorizeRequests().antMatchers("/inscription","/register","/login").permitAll();
-        http.authorizeRequests().antMatchers("/home","/books").hasAuthority("USER");
+        http.authorizeRequests().antMatchers("/home","/books","/reservations").hasAuthority("USER");
         http.authorizeRequests().antMatchers("/administration").hasAuthority("ADMIN");
         http.exceptionHandling().accessDeniedPage("/403");
         http.logout();
