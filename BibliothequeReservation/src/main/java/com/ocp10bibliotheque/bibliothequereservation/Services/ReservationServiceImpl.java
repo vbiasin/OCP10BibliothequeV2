@@ -207,7 +207,6 @@ public class ReservationServiceImpl implements IReservationService{
         reservation.get().setStatus("Annulée");
         reservation.get().setCanBeCancel(false);
         reservation.get().getBook().setCurrentNumberReservation(reservation.get().getBook().getCurrentNumberReservation()-1);
-        reservation.get().getBook().setNumberExemplarActual(reservation.get().getBook().getNumberExemplarTotal()+1);
         bookRepository.saveAndFlush(reservation.get().getBook());
         Reservation nextReservation = getNextReservation(reservationRepository.findByBookAndStatus(reservation.get().getBook(),"en attente"));
         if(nextReservation!=null) reserve(nextReservation.getUserAccount().getMail(),nextReservation.getBook().getId());

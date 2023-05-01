@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/LendingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/DAO/LendingRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/main/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeReservation/src/test/java/com/ocp10bibliotheque/bibliothequereservation/Services/ReservationServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BibliothequeWeb/src/main/java/com/ocp7bibliotheque/bibliothequeweb/Controllers/WebReservationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="D:\Projets\JAVA\Projet10\Repports\BibliothequeAdministration" />
+    <option name="OUTPUT_DIRECTORY" value="D:\Projets\JAVA\Projet10\Repports\Dossier" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,7 +84,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet7&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projets/JAVA/Projet10/Repports/Dossier&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -122,7 +124,7 @@
       <recent name="com.ocp7bibliotheque.bibliothequebook.Entites" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BibliothequeReservationApplication">
+  <component name="RunManager" selected="JUnit.LendingServiceImplTest">
     <configuration name="BookServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeBook" />
       <extension name="coverage">
@@ -138,9 +140,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LendingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeBook" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.LendingServiceImplTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReservationServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BibliothequeReservation" />
-      <extension name="coverage">
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
         <pattern>
           <option name="PATTERN" value="com.ocp10bibliotheque.bibliothequereservation.Services.*" />
           <option name="ENABLED" value="true" />
@@ -148,53 +166,40 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services" />
       <option name="MAIN_CLASS_NAME" value="com.ocp10bibliotheque.bibliothequereservation.Services.ReservationServiceImplTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserAccountServiceImplTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeBook" />
-      <extension name="coverage">
+    <configuration name="RoleServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeAdministration" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
         <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequebook.*" />
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequebook" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequebook.UserAccountServiceImplTest" />
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.RoleServiceImplTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeWeb" />
-      <extension name="coverage">
+    <configuration name="UserAccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BibliothequeAdministration" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" runner="jacoco">
         <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeweb.*" />
+          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeadministration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeweb" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeweb.UserServiceDetailsTest" />
+      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeadministration" />
+      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeadministration.UserAccountServiceImplTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BibliothequeWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ocp7bibliotheque.bibliothequeweb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ocp7bibliotheque.bibliothequeweb" />
-      <option name="MAIN_CLASS_NAME" value="com.ocp7bibliotheque.bibliothequeweb.UserServiceDetailsTest" />
-      <option name="METHOD_NAME" value="loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,10 +274,10 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BookServiceImplTest" />
+      <item itemvalue="JUnit.LendingServiceImplTest" />
       <item itemvalue="JUnit.ReservationServiceImplTest" />
-      <item itemvalue="JUnit.UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
-      <item itemvalue="JUnit.UserServiceDetailsTest" />
-      <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
+      <item itemvalue="JUnit.RoleServiceImplTest" />
+      <item itemvalue="JUnit.UserAccountServiceImplTest" />
       <item itemvalue="Spring Boot.BibliothequeEurekaApplication" />
       <item itemvalue="Spring Boot.BibliothequeSpringCloudConfigApplication" />
       <item itemvalue="Spring Boot.BibliothequeWebApplication" />
@@ -283,11 +288,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LendingServiceImplTest" />
         <item itemvalue="JUnit.BookServiceImplTest" />
         <item itemvalue="JUnit.ReservationServiceImplTest" />
-        <item itemvalue="JUnit.UserServiceDetailsTest" />
-        <item itemvalue="JUnit.UserServiceDetailsTest.loadUserByUsername_UserFoundAndActive_ReturnsUserDetails" />
-        <item itemvalue="JUnit.UserAccountServiceImplTest (1)" />
+        <item itemvalue="JUnit.UserAccountServiceImplTest" />
+        <item itemvalue="JUnit.RoleServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -418,14 +423,9 @@
       <workItem from="1682565801820" duration="7613000" />
       <workItem from="1682574305507" duration="1260000" />
       <workItem from="1682575714601" duration="258000" />
-      <workItem from="1682579297922" duration="5314000" />
-    </task>
-    <task id="LOCAL-00031" summary="Test recherche utilisateur 260320222">
-      <created>1648279560672</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1648279560672</updated>
+      <workItem from="1682579297922" duration="6359000" />
+      <workItem from="1682774632958" duration="3193000" />
+      <workItem from="1682914617981" duration="74000" />
     </task>
     <task id="LOCAL-00032" summary="Test suppression role 06042022">
       <created>1649267770593</created>
@@ -763,7 +763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682580851382</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="correction annulation réservation (double annulation)">
+      <created>1682584766742</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1682584766742</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -852,7 +859,7 @@
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ContactServiceImplTest.exec" NAME="ContactServiceImplTest Coverage Results" MODIFIED="1678905113536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp7bibliotheque.bibliothequeadministration.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$LendingServiceImplTest.exec" NAME="LendingServiceImplTest Coverage Results" MODIFIED="1679415352441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$LendingServiceImplTest.exec" NAME="LendingServiceImplTest Coverage Results" MODIFIED="1682781552323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp7bibliotheque.bibliothequebook.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest_checkReservationConditionByUserLoanNOK.ic" NAME="ReservationServiceImplTest.checkReservationConditionByUserLoanNOK Coverage Results" MODIFIED="1675872026021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -860,6 +867,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$ReservationServiceImplTest.exec" NAME="ReservationServiceImplTest Coverage Results" MODIFIED="1678001792862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp10bibliotheque.bibliothequereservation.Services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$LendingServiceImplTest.ic" NAME="LendingServiceImplTest Coverage Results" MODIFIED="1682781475644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ocp7bibliotheque.bibliothequebook.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OCP10BibliothequeV2$RoleServiceImplTest.exec" NAME="RoleServiceImplTest Coverage Results" MODIFIED="1679512804945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.ocp7bibliotheque.bibliothequeadministration.*</FILTER>

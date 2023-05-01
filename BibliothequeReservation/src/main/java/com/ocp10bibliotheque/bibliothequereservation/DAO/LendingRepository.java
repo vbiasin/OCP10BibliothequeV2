@@ -13,5 +13,6 @@ public interface LendingRepository extends JpaRepository<Lending,Integer> {
 
     List<Lending> findByBookIdAndUserAccountMail(int id, String userAccountMail) throws Exception;
     List<Lending> findByBookId(int idBook) throws Exception;
+    List<Lending> findByBook(Book book) throws Exception;
 
 }
